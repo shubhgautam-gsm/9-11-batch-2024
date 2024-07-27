@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-Block Demonstration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            padding: 20px;
+            max-width: 800px; /* Optional: Set a maximum width for responsiveness */
+            margin: 0 auto; /* Optional: Center the container horizontally */
+        }
+        
+        .inline-block-item {
+            display: inline-block;
+            margin: 10px; /* Spacing between elements */
+            padding: 15px; /* Padding within each element */
+            border: 1px solid #ddd; /* Border */
+            border-radius: 5px; /* Rounded corners */
+            text-align: center; /* Center content within each element */
+        }
+        
+        .inline-block-item img {
+            /* Optional styles for images */
+            max-width: 100%; /* Allow images to scale to fit the element */
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Inline-Block Elements</h2>
+        <p>Here's a showcase of elements displayed using `display: inline-block`:</p>
+        <div class="inline-block-item">
+            <img src="../html-works/images/fs.jpeg" alt="Image 1">
+            <p>Image 1 Caption</p>
+        </div>
+        <div class="inline-block-item">
+            <img src="../html-works/images/fs.jpeg" alt="Image 1">
+        </div>
+        <div class="inline-block-item">
+            <button>Click Me</button>
+        </div>
+    </div>
+</body>
+</html>

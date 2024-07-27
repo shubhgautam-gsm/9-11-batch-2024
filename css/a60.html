@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test {
+            width: 200px;
+            word-break: keep-all;
+            border: 2px solid red;
+        }
+
+        .test2 {
+            width: 200px;
+            word-break: break-all;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>The word-break Property</h1>
+    <div class="test"><!-- not break words take word at new line  -->
+
+        This is a test paragraph that will be wrapped onto multiple-lines. The word-wrap
+        property will ensure that words do not exceed the width of their containers.
+    </div><br>
+    <div class="test2"><!-- break words take other part of word at new line  -->
+        This is a test paragraph that will be wrapped onto-multiple-lines. The word-wrap
+        property will ensure that words do not exceed the width of their containers.
+    </div>
+</body>
+
+</html>

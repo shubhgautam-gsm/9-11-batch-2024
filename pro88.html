@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ctx.arc(95,50,40,0,2*Math.PI);: This method draws a circle. It takes six parameters: (x, y, radius, startAngle, endAngle, anticlockwise) -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(120,53,20,0,2*Math.PI);
+        ctx.stroke();
+        </script> 
+
+
+
+        
+<!-- 
+degrees = radians * (180 / Math.PI)
+
+Start angle in radians: 2
+End angle in radians: 4
+
+Converting them to degrees:
+
+Start angle in degrees: 2 * (180 / Math.PI) ≈ 114.59°
+End angle in degrees: 4 * (180 / Math.PI) ≈ 229.18°
+
+Therefore, the degree measure of the arc is from approximately 114.59° to 229.18°. -->
+</body>
+</html>

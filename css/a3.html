@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #borderimg {
+            border: 5px solid transparent;
+            padding: 30px;
+            border-image: url('../images/border.png') 40 round;
+   
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The border-image Property</h1>
+
+    <p>Here, the middle sections of the image are repeated to create the border:</p>
+    <div id="borderimg">This is a dashed border around the image.</div>
+
+    <!-- You may want to replace this with your actual image -->
+    <img src="../images/cup.jpg" style="display: none;">
+
+    <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    /* unvisited link */
+    a:link {
+      color: red;
+    }
+
+    /* visited link */
+    a:visited {
+      color: rgb(109, 128, 0);
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: hotpink;
+    }
+
+    /* selected link */
+    a:active {
+      color: blue;
+
+    }
+    .material-symbols-outlined {
+      color: red;
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h2>Styling a link depending on state</h2>
+
+  <p><b><a href="./ex11.html" target="_blank">This is a link</a></b></p>
+  <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+  <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+  <span class="material-symbols-outlined">
+    favorite
+    </span>
+</body>
+
+</html>

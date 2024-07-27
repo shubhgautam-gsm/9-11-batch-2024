@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-size: 28px;
+        }
+        .main{
+         position: relative;  
+         width: 0px;
+         background-color: brown;
+        }
+        img{
+            height: 80px;
+            width: 120px;
+        }
+        .display{
+            position: absolute;
+            display: none;
+        }
+        .main:hover .display{
+            display: block;
+
+         
+        }
+        .display img{
+            height: 200px;
+            width: 300px;
+
+        }
+        .display div{
+            top: 0;
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<h1>display inline take width as per contnent not 100% so cursor work at hover on button </h1>
+    <div class="main">
+        <img src="../images/items.jpg">
+        <div class="display" > 
+            <img  src="../images/items.jpg" alt="">
+            <div>DELL LAPTOP</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

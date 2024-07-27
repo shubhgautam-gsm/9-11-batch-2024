@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+    .s1:hover{
+        color: red;background-color:rgb(194, 107, 14);font-family:cursive;font-size:larger
+    }
+</style>
+<h1 class="s1">hello woorld</h1>
+<h2 id="clr">The button Element</h2>
+
+<!-- <button type="button" onclick="document.getElementById('clr').innerHTML='THANKS';document.getElementById('clr').style.color='red';">Click Me!</button> -->
+<button type="button" onclick="clr()">Click Me!</button>
+
+<script>
+    function clr(){
+        document.getElementById("clr").innerHTML="THANKS";document.getElementById("clr").style.color='red';
+    }
+</script>
+</body>
+</html>
+

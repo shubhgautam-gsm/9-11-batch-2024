@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border-container {
+            position: relative;
+            padding: 30px;
+            width: 300px;
+            height: 150px;
+            margin: 20px;
+            border: 2px red solid;
+        }
+
+        .border-container .content {
+            position: relative;
+            z-index: 2;
+            background-color: white;
+            padding: 30px;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .border-container .border-top,
+        .border-container .border-right,
+        .border-container .border-bottom,
+        .border-container .border-left {
+            position: absolute;
+            z-index: 1;
+            background-size: cover;
+        }
+
+        .border-container .border-top {
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background-image: url('../images/comedy.jpeg');
+        }
+
+        .border-container .border-right {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 30px;
+            background-image: url('../images/border.png');
+        }
+
+        .border-container .border-bottom {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 10px;
+            background-image: url('../images/bird-wings-flying.gif');
+        }
+
+        .border-container .border-left {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            background-image: url('../images/border.png');
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The border-image Property</h1>
+
+    <p>Here, each side of the border has a different image:</p>
+    <div class="border-container">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+        <div class="content">
+            This is a border with different images on each side.
+        </div>
+    </div>
+
+    <!-- You may want to replace this with your actual image -->
+    <img src="../images/cup.jpg" style="display: none;">
+
+    <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<canvas id="barChart" width="400" height="200"></canvas>
+<script>
+  var canvas = document.getElementById('barChart');
+  var ctx = canvas.getContext('2d');
+
+  // Sample data
+  var data = [30, 50, 80, 60, 40];
+  var labels = ['A', 'B', 'C', 'D', 'E'];
+
+  // Calculate bar width
+  var barWidth = (canvas.width - 100) / data.length;
+
+  // Draw bars
+  ctx.fillStyle = 'blue';
+  for (var i = 0; i < data.length; i++) {
+    var x = 50 + i * (barWidth + 20);
+    var y = canvas.height - data[i] - 30;
+    ctx.fillRect(x, y, barWidth, data[i]);
+    ctx.fillText(labels[i], x + 5, canvas.height - 10);
+  }
+</script>

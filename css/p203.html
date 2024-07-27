@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+    ul{
+        list-style-type:none;
+        width: 200px;
+        margin:0px;
+        padding: 0px;
+        background-color: brown;
+        border: black 1px solid;
+        
+    }
+ 
+    li{
+        text-align: center;
+        border: inherit;
+
+    }
+    li:last-child{
+        border-bottom: none;
+    }
+    li a.active{
+        background-color: darkorange;
+    }
+    li a{
+        display: block;
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    li a:hover:not(.active){
+        background-color: rgb(78, 81, 84);
+    }
+
+    
+</style>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a class="active2"  href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+
+</body>
+</html>
+
+

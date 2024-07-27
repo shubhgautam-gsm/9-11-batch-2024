@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient3
+var grd = ctx.createLinearGradient(0, 90, 20, 100);
+// var grd = ctx.createRadialGradient(101,12,12, 90, 90, 180);
+// Define gradient colors
+grd.addColorStop(0, "red");
+grd.addColorStop(0.5, "white");
+grd.addColorStop(1, "green");
+
+// Fill rectangle with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0, 0, 200, 100);
+</script>
+
+</body>
+</html>

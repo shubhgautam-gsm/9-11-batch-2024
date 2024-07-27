@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
+
+<button onclick="show()">CAP OF INDIA</button>
+<button onclick="hide()">CAP OF GUJS</button>
+
+<h1  style="display: none;">MR.INDIA</h1>
+
+<h2 id="city">CAPITAL</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function show() {
+  document.getElementById("city").innerHTML = "DELHI";
+  document.getElementById("city").style.color='red';
+  document.getElementById("city").style.backgroundColor='green';
+  document.getElementById("city").style.borderRadius='40px';
+
+}
+
+function hide() {
+  document.getElementById("city").innerHTML = "RAJKOT";
+  document.getElementById("city").style.color='white';
+  document.getElementById("city").style.backgroundColor='orange';
+  document.getElementById("city").style.borderRadius='20px 20px 0px 0px';
+  document.getElementById("city").style.paddingLeft='20px';
+  
+  
+  }
+</script>
+
+</body>
+</html>
+
+

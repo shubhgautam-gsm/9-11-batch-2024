@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+
+<img src="pic_bulboff.gif" id="myHeader1">
+<button onclick="displayResult()">Change text</button>
+
+
+<script>
+function displayResult(){
+if(document.getElementById("myHeader1").src=="pic_bulboff.gif"){
+   document.getElementById("myHeader1").src="pic_bulbOn.gif";
+}
+else{
+   document.getElementById("myHeader1").src="pic_bulboff.gif";
+}
+}
+
+</script>
+
+</body>
+</html>
+

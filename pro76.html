@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Flexbox Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .flex-item {
+    padding: 10px;
+    border: 1px solid #9e0c0c;
+  }
+
+  /* Different flex-grow values for the flex items */
+  .item-1 {
+    flex-grow: 1;
+    background-color: rgb(54, 177, 218);
+  }
+
+  .item-2 {
+    flex-grow: 3;
+    background-color: rgb(15, 135, 15);
+  }
+  .fmf{
+    font-family: 'Times New Roman', Times, serif;
+  }
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item item-1 fmf">
+    Flex Item 1
+  </div>
+  <div class="flex-item item-2 fmf">
+    Flex Item 2
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item item-1">
+    Flex Item 1
+  </div>
+  <div class="flex-item item-2">
+    Flex Item 2
+  </div>
+</div>
+
+</body>
+</html>

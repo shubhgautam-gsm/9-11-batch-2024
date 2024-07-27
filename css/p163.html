@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* inline not consider height and width */
+        .a span {
+            display: inline;
+            background-color: orange;
+            margin-left: 4px;
+            height: 100px;
+            width: 200px;
+        }
+        /* inline-block consider height and width and inline */
+        .b span {
+            display: inline-block;
+            background-color: orange;
+            margin-left: 4px;
+            height: 100px;
+            width: 200px;
+
+        }
+        /* block consider height and width but not consider inline */
+        .c span {
+            display: block;
+            background-color: orange;
+            margin-left: 4px;
+            height: 100px;
+            width: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>The display Property</h2>
+    <h2>display: inline</h2>
+    <div class="a">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, culpa aliquid aliquam provident
+        fugiat quis mollitia recusandae odio tempora dolorem doloribus, a accusantium porro deserunt dolores eaque sunt.
+        Cum, laboriosam!
+        <span>first</span><span>second</span>
+    </div>
+
+    <h2>display: inline-block</h2>
+    <div class="b">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, culpa aliquid aliquam provident
+        fugiat quis mollitia recusandae odio tempora dolorem doloribus, a accusantium porro deserunt dolores eaque sunt.
+        Cum, laboriosam!
+        <span>first</span><span>second</span>
+    </div>
+    <h2>display: block</h2>
+    <div class="c">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, culpa aliquid aliquam provident
+        fugiat quis mollitia recusandae odio tempora dolorem doloribus, a accusantium porro deserunt dolores eaque sunt.
+        Cum, laboriosam!
+        <span>first</span><span>second</span>
+    </div>
+</body>
+
+</html>

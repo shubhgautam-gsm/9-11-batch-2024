@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-size: 28px;
+        }
+        .drp{
+            background-color: #4CAF50;
+            color: white;
+            padding: 25px;
+            border: none;
+            font-size: 19px;
+            cursor: pointer;
+
+        }
+        .active {
+            background-color: #4CAF50;
+        }
+        .dropdown{
+            background-color: aqua;
+            position: relative;
+            display: inline-block;
+            margin-left: 20px;
+            bottom: 0px;
+        }
+        .dropdown:hover .dropdown-content {
+            background-color: #ffffff;
+            display: block;
+            position: absolute;
+            right: 0;
+        
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(124, 137, 137);
+        }
+
+        .dropdown-content {
+            box-shadow: 2px 2px 9px 2px black;
+            display: none;
+            min-width: 280px;
+
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          
+
+        }
+        .left{
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+<h1>display inline take width as per contnent not 100% so cursor work at hover on button </h1>
+    <div class="dropdown" style="float: left;">
+        <button class="drp">Dropdown</button>
+        <div class="dropdown-content left">
+            <a href="#news1">Link 1</a>
+            <a href="#news2">Link 2</a>
+            <a href="#news3">Link 3</a>
+        </div>
+    </div>
+
+    <div class="dropdown" style="float: right;">
+        <button class="drp">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#news1">Link 1</a>
+            <a href="#news2">Link 2</a>
+            <a href="#news3">Link 3</a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

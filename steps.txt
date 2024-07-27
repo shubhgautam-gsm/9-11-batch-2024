@@ -1,0 +1,59 @@
+---------STEP 1-----------
+
+Create folder with your name or htmlworks in local drive
+
+
+---------STEP 2--------------
+
+METHOD THROUGH COMMAND PROMPT
+--->OPEN FOLDER I.E(sgpatel) ---> CLICK ON UPSIDE AS PER BELOW
+
+	BEFORE  >THIS PC > Local Disk(D:) > sgpatel >(here click)
+
+
+	AFTER   D:\sgpatel                  (it shows like this)
+
+
+	THERE WRITE  cmd
+
+
+	THEN CMD(COMMAND PROMPT OPEN) AND OPEN LIKE THIS IN CMD  D:\sgpatel>here
+					TO OPEN WRITE (code .)	 D:\sgpatel>code .
+
+	FINAL VS CODE OPENED
+
+
+---------STEP 3-----------
+
+	1--> CTRL + N
+	2--> CTRL + S WITH INDEX.HTML
+	3--> WRITE ''!'' AND ENTER SO HTML FORMAT READY
+
+
+--------STEP 4------------
+
+	1--> WRITE CODE OF HTML INSIDE TAGS MOVES RIGHT SIDE
+	2--> NAME HEADING AND GIVE <img src> INSIDE <a href> AS BELOW CODE
+
+     			
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipcart</title>
+</head>
+<body>
+    <h1>PRODUCTS</h1>
+    <H6>LAPTOP</h6>
+        <a href="lapatop categories/dell.html"><img src="img/dell.jpeg" alt="img not found"></a>
+        <a href="lapatop categories/lenovo.html"><img src="img/lenovo.jpeg" alt="img not found"></a>
+        <a href="lapatop categories/macbook.html"><img src="img/macbook.jpeg" alt="img not found"></a>
+    </body>
+</html>
+	
+------STEP 5--------------
+
+	1-->QUESTION YOURSELF WHAT U NEED WHAT U HAVE DONE
+	2-->U GET ANSWER THAT I CREATE WEBSITE OF FLIPCART INSIDE THAT U GAVE 3 IMAGES OF LATOP CLICKABLE SO U NEED CREATE FOLDER "lapatop categories"
+	3-->INSIDE lapatop categories [ dell.html,lenovo.html,macbook.html ]
