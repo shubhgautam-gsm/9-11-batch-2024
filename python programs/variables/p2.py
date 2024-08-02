@@ -1,4 +1,4 @@
-a=10.1
+a=True
 b=40
 
 print(type(a))

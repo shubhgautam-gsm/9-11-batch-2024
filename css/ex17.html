@@ -15,8 +15,12 @@
             margin-top: 340px;
 
             }
-        div:hover{  
+        .div1:hover{  
             transform: rotateX(30deg) rotateY(180deg) rotateZ(90deg);
+            .div2{
+                z-index: 1;
+                transform: scale(2);
+            }
         }
             img{
                 transform: rotate(-90deg) scale(3,2);
@@ -24,9 +28,11 @@
     </style>
 </head>
 <body>
-    <div>
+    <div class="div1">
         <img src="../images/items.jpg" alt="">
     </div>
-    
+    <div class="div2">
+        <img src="../images/profile-11.jpg" alt="">
+    </div>
 </body>
 </html>
