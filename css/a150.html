@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            margin-top: 150px;
+            margin-left: 150px;
+        }
+        div.tooltip{
+            position: relative;
+            margin-left: 150px;
+            display: inline-block;
+        }
+        .tooltip:hover .tooltip-text{
+          visibility: visible;
+        }
+        span.tooltip-text {
+            /*top:-200%;*/
+            left: 0%;
+            z-index: 5;
+            bottom: 115%;
+            position: absolute;
+            width: 120px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div class="tooltip">WWW
+        <span class="tooltip-text">WORLD WIDE WEB</span>
+    </div>
+
+</body>
+</html>

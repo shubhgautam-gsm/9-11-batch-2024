@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 16.66666%; /* 6 images side by side */
+}
+
+@media only screen and (max-width: 1200px) {
+  .responsive {
+    width: 33.33333%; /* 3 images side by side */
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 100%; /* 1 image per row */
+    margin: 6px 0;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Image Gallery</h2>
+
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/items.jpg">
+      <img src="../images/items.jpg" alt="Image 1" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/items.jpg">
+      <img src="../images/items.jpg" alt="Image 2" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/items.jpg">
+      <img src="../images/items.jpg" alt="Image 3" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/items.jpg">
+      <img src="../images/items.jpg" alt="Image 4" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/items.jpg">
+      <img src="../images/items.jpg" alt="Image 5" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/items.jpg">
+      <img src="../images/items.jpg" alt="Image 6" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example uses media queries to re-arrange the images on different screen sizes: for screens larger than 1200px wide, it will show six images side by side; for screens smaller than 1200px, it will show three images side by side; and for screens smaller than 700px, the images will stack vertically (one per row).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+</body>
+</html>

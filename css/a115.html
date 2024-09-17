@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+
+        div.container {
+            margin-top: 200px;
+            position: relative;
+            width: 30%;
+        }
+
+        div.card {
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            top: 100%;
+            transition: .3s ease;
+         
+        
+        }
+
+        div.container:hover .card {
+            top:0;
+            height: 100%;
+        }
+
+        .txt {
+            background-color: #008CBA;
+            white-space: nowrap;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="../images/items.jpg" alt="Cinque Terre">
+        <div class="card">
+            <div class="txt">item1</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
