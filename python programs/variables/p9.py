@@ -1,4 +1,5 @@
 #tuples() tuples modify ,delete
+# index start from 0
 str1=('mango','apple','banana',5,6)
 print(str1[1:2])
 print(str1[2:])
