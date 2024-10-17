@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Alignment Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .example-container {
+            height: 100px;
+            margin-bottom: 1rem;
+            display: flex;
+       
+            border: 1px solid #000;
+        }
+        .example-container span {
+            display: inline-block;
+            height: 50px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        <h1>Text Alignment Showcase</h1>
+        <h1>justify works on  x-axis | align on y-axis</h1>
+        <div class="example-container align-items-center justify-content-between ">
+            <span class="  ">Baseline Align</span>
+            <span class="  ">Baseline Align</span>
+            <span class="  ">Baseline Align</span>
+            <span class="  ">Baseline Align</span>
+        </div>
+
+        <div class=" example-container justify-content-start ">
+            <span class=" align-content-end">Top Align</span>
+        </div>
+
+        <div class="example-container">
+            <span class="align-middle">Middle Align</span>
+        </div>
+
+        <div class="float-end align-items-end  example-container">
+            <span class="">Bottom Align</span>
+        </div>
+
+        <div class="example-container">
+            <span class="align-text-top">Text-Top Align</span>
+        </div>
+
+        <div class="example-container">
+            <span class="align-text-bottom">Text-Bottom Align</span>
+        </div>
+    </div>
+</body>
+</html>
