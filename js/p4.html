@@ -1,0 +1,92 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> JavaScript use to manipulate(change) Html code</h1>
+    <!-- bulb on-off -->
+    <br>
+
+    <a href="#" onclick="bulb()">
+        <img src="../images/pic_bulboff.gif" alt="" id="bulb">
+    </a>
+    <!-- <script>
+        var check = '../images/pic_bulboff.gif';
+        function bulb() {
+            var bulb = document.getElementById("bulb");
+          
+            if (check =='../images/pic_bulboff.gif') {
+                check =  "../images/pic_bulbon.gif";
+                bulb.src = "../images/pic_bulbon.gif";
+            }
+            else {
+                bulb.src = "../images/pic_bulboff.gif";
+                check = '../images/pic_bulboff.gif';
+            }
+
+        }
+    </script> -->
+    <script>
+        var i = 0;
+        function bulb() {
+            var bulb = document.getElementById("bulb");
+            if (i == 0) {
+               // i = i + 1;
+                i++;
+                bulb.src = "../images/pic_bulbon.gif";
+            }
+            else {
+              //  i = i - 1;
+                i--;
+                bulb.src = "../images/pic_bulboff.gif";
+            }
+    
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JavaScript use to manipulate(change) Html code</h1>
+    bulb on-off
+<br>
+
+<a href="#" onclick="bulb()">
+    <img src="../images/pic_bulboff.gif" alt="" id="bulb">
+</a>
+<script>
+    function bulb() {
+        var bulb = document.getElementById("bulb");
+        var i = 0;
+        if (i == 0) {
+
+            bulb.src = "../images/pic_bulbon.gif";
+        }
+        else {
+            var i = i - 1;
+            bulb.src = "../images/pic_bulboff.gif";
+        }
+
+    }
+</script>
+</body>
+
+</html> 
