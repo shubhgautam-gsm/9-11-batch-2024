@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Objects are Mutable</h2>
+
+<p>Changes to a copy of an object will also change the original object:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age:50,
+  eyeColor: "blue"
+};
+
+// Create a Copy
+const x = person;
+const y = person;
+
+
+if(user==x && userpass=='x12'|| user==y && userpass=='y12'){
+x.firstname;
+
+}
+
+// Change Age
+x.firstName = 'JAY';
+y.firstName ='MEET';
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>

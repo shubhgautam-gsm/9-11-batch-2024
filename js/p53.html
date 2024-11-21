@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Functions</h1>
+    <h2> when return it  stores value and run when call that function</h2>
+    <h2>reuse when return storethat function value to variable</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>//no return 
+        function toCelsius(f) {
+           return document.getElementById("demo").innerHTML = f;
+        }
+        toCelsius(66);
+        
+        let india=toCelsius(66)
+        document.getElementById("demo2").innerHTML = india;
+    </script>
+    <h2> here toCelsius() is call so inside that was work and change demo to 66 </h2>
+
+</body>
+
+</html>

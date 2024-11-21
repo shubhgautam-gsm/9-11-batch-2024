@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+
+        x = 10; //var is hoisted means use before initialization
+        document.getElementById("demo").innerHTML = x;
+        var x;
+        y = 10; //let  is not hoisted means not use before initialization
+        document.getElementById("demo").innerHTML = x;
+        let y;
+    </script>
+</body>
+
+</html>

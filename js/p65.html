@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Call by Value</h1>
+
+<p id="demo1"></p>
+
+<script>
+function changeValue(val) {
+    val = 100;
+    return val;
+}
+
+let laptop = hp;
+let mac=changeValue(laptop);
+let lenovo=changeValue(laptop);
+
+
+document.getElementById("demo1").innerHTML =
+"The original value is " + num + ", and the returned value is "  + ".";
+</script>
+
+</body>
+</html>

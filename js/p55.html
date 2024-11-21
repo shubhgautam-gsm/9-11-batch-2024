@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Functions</h1>
+
+<p>Outside myFunction() carName is undefined.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+try{
+let text = "Outside: " +  carName;
+console.log('car name not');
+}
+catch{
+//local(private/khangi) {i am private }
+{ let carName = "Volvo";
+  let text = "Inside: " + typeof carName + " " + carName; 
+  document.getElementById("demo2").innerHTML = text;
+}
+// document.getElementById("demo2").innerHTML = text; cannot get from {}
+}
+</script>
+
+</body>
+</html>

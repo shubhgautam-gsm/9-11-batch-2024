@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Call by Reference</h1>
+
+<p id="demo2"></p>
+
+<script>
+function changeProperty(a) {
+    a.name = "Alice";
+}
+
+let person = {name: "John", age: 30};
+changeProperty(person);
+
+document.getElementById("demo2").innerHTML =
+"The person's name is now " + person.name + ".";
+</script>
+
+</body>
+</html>

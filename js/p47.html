@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Operators</h1>
+
+<p>All conditional operators can be used on both numbers and strings.</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+<script>
+let jaydeep_age = 83;
+let jaydeep_fiyonse = 23;
+let jaydeep_money = 600000;
+let jaydeep_fiyonse_money = 200000;
+
+// PART 1:
+let result = jaydeep_fiyonse == jaydeep_age || jaydeep_fiyonse_money < jaydeep_money ? 'yes can marry' : 'cant marry';
+document.getElementById("demo").innerHTML = result;
+
+// PART 2:
+let familyrepeatution = 2;
+let budget = 80000000000;
+let politicalPerson = 'yes';
+
+if ((familyrepeatution >= 7 && budget >= 400000000) || politicalPerson == 'yes') {
+    document.getElementById("demo2").innerHTML = 'ye u can buy royalsoyal';
+} else {
+    document.getElementById("demo2").innerHTML = 'u cant buy royalsoyal';
+}
+
+// PART 3:
+let country = 'erica';
+let marks = 50;
+let jay_pass = true;
+let user;  // user is undefined
+
+// Check if 'user' is falsy and display an error message in the webpage
+if (!user) {
+    document.getElementById("demo3").innerHTML = 'User is required. Please log in.';
+}
+/*if(!pass){
+    document.getElementById("demo3").innerHTML = 'Password is required. Please enter a valid password.';
+}*/
+document.getElementById("demo4").innerHTML = typeof(marks);
+document.getElementById("demo5").innerHTML = typeof(jay_pass);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Operators</h1>
+
+<p>All conditional operators can be used on both numbers and strings.</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+let text1 = "5";
+let text2 = 5;
+let result = text1 == text2;
+let result2 = text1 === text2;
+let result3 = text1 !== text2;
+let result4 = text1===text2?'yes equal':'no not equal';
+document.getElementById("demo").innerHTML = "Is text1 equal to '==' text2 ? " + result;
+document.getElementById("demo2").innerHTML = "Is text1 equal to '===' text2 ? " + result2;
+document.getElementById("demo3").innerHTML = "Is text1 not equal to '!==' text2 ? " + result3;
+document.getElementById("demo4").innerHTML = "Is text1 equal to '==' text2 ? " + result4;
+/*if(text1===text2){
+    document.write("text1 and text2 are equal");
+}else{
+    document.write("text1 and text2 are not equal");
+}*/
+</script>
+
+</body>
+</html>
