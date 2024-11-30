@@ -7,11 +7,20 @@
 <p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
 
 <p id="demo"></p>
+<p id="demo2"></p>
 
 <script>
 let a = 3;
-let x = (100 + 50 )* a;//bodmas rules first div - mult -add -sub
+let x = (100 + 50) * a; // BODMAS rules: parentheses, multiplication, addition
 document.getElementById("demo").innerHTML = x;
+
+// Use a loop to append values
+let result = 6;
+for (let i = 3; i <= 30; i++) {
+    result += + 3 + "<br>";
+
+}
+document.getElementById("demo2").innerHTML = result;
 </script>
 
 </body>
