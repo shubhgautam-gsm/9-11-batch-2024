@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String</h1>
+<h2>The concat() Method</h2>
+
+<p>The concat() method joins two or more strings:</p>
+
+<p id="demo">i show concat</p>
+<button onclick="myfunc()">click</button>
+
+<script>
+let text1 = "Hello";
+let text2 = "World!";
+//let text3 = text1+" "+text2;
+let text3 = text1.concat(" ",text2);
+function myfunc(){
+ document.getElementById("demo").innerHTML = text3;
+}</script>
+
+</body>
+</html>
+
+
