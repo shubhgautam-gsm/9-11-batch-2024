@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Product List</h1>
+  <p id="product-list"></p>
+
+  <script>
+    // Example: Generating a Product List
+    const products = [
+      { name: "Laptop", price: "$999" },
+      { name: "Smartphone", price: "$699" },
+      { name: "Tablet", price: "$499" }
+    ];
+
+    // Create HTML for products
+    let productHTML = "<ol>";
+    for (const product of products) {
+      productHTML += `<li>${product.name} - ${product.price}</li>`;
+    }
+    productHTML += "</ol>";
+
+    // Inject into the page
+    document.getElementById("product-list").innerHTML = productHTML;
+  </script>
+</body>
+</html>
