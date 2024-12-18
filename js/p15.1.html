@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p:hover {
+        background-color: blueviolet;
+    }
+
+</style>
+
+<body>
+    <h1> window print</h1>
+    <!--     
+    <button onclick="document.getElementsByClassName('demo')[0].innerHTML='this is javascript'">Print this page</button>
+    <button onclick="document.getElementsByClassName('demo')[1].innerHTML='this is javascript'">Print this page</button> -->
+    <button onclick="chg()">Print this page</button>
+    <p class="demo">
+
+        Lorem ipsum dolor sit amet.
+        Rerum saepe minima unde architecto.
+        Quod voluptatibus temporibus omnis numquam.
+        Animi ut aperiam modi? Officiis!
+        Sed quo aspernatur natus voluptates?
+    </p>
+    <p class="demo">
+
+        Lorem ipsum dolor sit amet.
+        Rerum saepe minima unde architecto.
+        Quod voluptatibus temporibus omnis numquam.
+        Animi ut aperiam modi? Officiis!
+        Sed quo aspernatur natus voluptates?
+    </p>
+    <p class="demo">
+
+        Lorem ipsum dolor sit amet.
+        Rerum saepe minima unde architecto.
+        Quod voluptatibus temporibus omnis numquam.
+        Animi ut aperiam modi? Officiis!
+        Sed quo aspernatur natus voluptates?
+    </p>
+    <p class="demo">
+
+        Lorem ipsum dolor sit amet.
+        Rerum saepe minima unde architecto.
+        Quod voluptatibus temporibus omnis numquam.
+        Animi ut aperiam modi? Officiis!
+        Sed quo aspernatur natus voluptates?
+    </p>
+</body>
+<!-- <script>
+   let x = document.getElementsByClassName('demo')
+    
+    function chg(){
+       x[0].innerHTML='this is javascript'
+       x[1].innerHTML='this is javascript'
+       x[2].innerHTML='this is javascript'
+    }
+    //chg();
+    // onclick is event
+</script> -->
+<script>
+    let x = document.getElementsByClassName('demo')
+    function chg() {
+        for(i=0;i<x.length;i++) {
+            x[i].innerHTML = 'this is javascript'
+        }
+        
+        
+
+    }
+
+</script>
+
+</html>
