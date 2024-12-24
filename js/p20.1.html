@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="demo">hello</h1>
+    
+
+    <!-- <script>
+        {
+            var a=20;// using var keyword use as global variable
+            let b=30;// using var keyword use as local variable
+            document.getElementsByClassName("demo")[0].innerHTML ='val of a is '+a;
+            document.getElementsByClassName("demo")[0].style.backgroundColor ='red';
+            document.getElementsByClassName("demo")[0].style.color ='white';
+            document.getElementsByClassName("demo")[0].style.border ='2px solid black';
+            document.getElementsByClassName("demo")[0].style.borderRadius ='20px 0px ';
+
+            document.getElementsByClassName("demo")[1].innerHTML ='val of b is '+ b;
+            document.getElementsByClassName("demo")[1].style.backgroundColor ='yellow';
+            document.getElementsByClassName("demo")[1].style.color ='blue';
+            document.getElementsByClassName("demo")[1].style.fontFamily ='cursive';
+        }
+       
+    </script> -->
+    <script>
+        {
+            var a = 20;// using var keyword use as global variable
+            let b = 30;// using var keyword use as local variable
+            let x = document.getElementsByClassName("demo")
+            x[0].innerHTML = 'val of a is ' + a;
+            x[0].style.backgroundColor = 'red';
+            x[0].style.color = 'white';
+            x[0].style.border = '2px solid black';
+            x[0].style.borderRadius = '20px 0px ';
+
+            x[1].innerHTML = 'val of b is ' + b;
+            x[1].style.backgroundColor = 'yellow';
+            x[1].style.color = 'blue';
+            x[1].style.fontFamily = 'cursive';
+        }
+
+    </script>
+</body>
+
+</html>

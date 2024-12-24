@@ -8,14 +8,14 @@
         user='iphone'
         if(user=='samsung'){
             
-            let mobile = ['s6','s7','s8','s9','pro30']; //local | private
-            document.getElementById("demo").innerHTML = 'samsung category is ' + mobile;
+            //local | private
+            document.getElementById("demo").innerHTML = 'samsung category is ' +  mobile.slice(0,5);
         }
 
         else if(user=='iphone'){
        
-            let mobile = ['iphone6','iphone7','iphone8','iphone9pro']; 
-            document.getElementById("demo").innerHTML = 'iphone category is: ' + mobile;
+            
+            document.getElementById("demo").innerHTML = 'iphone category is: ' + mobile.slice(5,9);
         }
         else{
             document.getElementById("demo").innerHTML = '<br> mobile is : ' + mobile;
@@ -23,3 +23,4 @@
     </script>
 </body>
 </html>
+

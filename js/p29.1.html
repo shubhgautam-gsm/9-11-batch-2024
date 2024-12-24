@@ -8,15 +8,16 @@
 </head>
 
 <body>
-    <p id="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
     <script>
 
         x = 10; //var is hoisted means use before initialization
-        document.getElementById("demo").innerHTML ='var x is'+ x;
+        document.getElementsByClassName("demo")[0].innerHTML ='var x is '+ x;
         var x;
-        y = 5; //let  is not hoisted means not use before initialization
-        document.getElementById("demo").innerHTML ='var x is'+ y;
-        let y;
+        let y = 5; //let  is not hoisted means not use before initialization
+        document.getElementsByClassName("demo")[1].innerHTML ='let y is '+ y;
+        
     </script>
 </body>
 

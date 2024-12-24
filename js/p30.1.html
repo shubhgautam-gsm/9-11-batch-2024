@@ -14,10 +14,15 @@
         document.getElementById("demo").innerHTML = x;
     </script> -->
     <script>
-
+        let y=10;
+        try{
         const x=5;// not able to redelcare and reassign const keyword
-        x=10; // copestop
+        x=10; // code stop
         document.getElementById("demo").innerHTML = x;
+        }catch(error){
+            console.log(error);
+        }
+        document.getElementById("demo").innerHTML = y;
     </script>
 </body>
 </html>
