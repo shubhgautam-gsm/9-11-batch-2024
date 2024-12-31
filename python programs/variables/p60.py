@@ -14,6 +14,7 @@ POSSIBILITIES = [
 
 # Check if the USER's input matches the correct password
 for USER in POSSIBILITIES:
+    # print(f"Match found: {USER}, breaking out of the loop.")
     if USER == PASS:
         print(f"Match found: {USER}, breaking out of the loop.")
         print(f"PASS AT { POSSIBILITIES.index(USER)+1} TRIES")

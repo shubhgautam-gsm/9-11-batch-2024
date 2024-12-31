@@ -7,7 +7,7 @@
 <p>You can NOT reassign a constant object:</p>
 
 <p id="demo"></p>
-
+<p id="demo2"></p>
 
 
 
@@ -18,11 +18,12 @@
 <script>
     try {
       const car = {type:"Fiat", model:"500", color:"white"};
-      car = {type:"Volvo", model:"EX60", color:"red"};// not stop code 
+      car = {type:"Volvo", model:"EX60", color:"red"};// not stop code when reassign 
     }
     catch (err) {
       document.getElementById("demo").innerHTML = err;
     }
+    document.getElementById("demo2").innerHTML = 'after error not stopping';
     console.log('after using try-catch it not stop code')
     </script>
     

@@ -7,9 +7,10 @@
   <script>
     // Example: Generating a Product List
     const products = [
-      { name: "Laptop", price: "$999" },
+      { name: "Laptop", price: "$999.22" ,color:'red'},
       { name: "Smartphone", price: "$699" },
-      { name: "Tablet", price: "$499" }
+      { name: "Tablet", price: "$499" },
+      { name: "Ipad", price: "$699" }
     ];
 
     // Initialize HTML for the product list
@@ -23,14 +24,14 @@
       productHTML += `<li>${product.name} - ${product.price}</li>`;
       
       // Convert price string to number and add to total
-      totalPrice += parseFloat(product.price.replace("$", ""));
+      totalPrice +=parseFloat(product.price.replace("$","")) ;
     }
 
     // Close the ordered list
     productHTML += "</ol>";
 
     // Add total price to the HTML
-    productHTML += `<p><strong>Total Price:</strong> $${totalPrice.toFixed(2)}</p>`;
+    productHTML += `<p><strong>Total Price:</strong> <b style='color:red'>$${totalPrice.toFixed(2)}</b> </p>`;
 
     // Inject the generated HTML into the page
     document.getElementById("product-list").innerHTML = productHTML;
