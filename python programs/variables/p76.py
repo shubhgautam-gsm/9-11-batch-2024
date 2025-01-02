@@ -3,16 +3,16 @@ n = 10
 
 num1=0
 num2=1
-next_number=num2
+num3=num2
 
 while count<=n:
  
- print(next_number)
+ print(num3)
  num1=num2
- num2=next_number
+ num2=num3
 #  switch words / value
 # swap elements  ex a=b b=c
- next_number=num1+num2
+num3=num1+num2
  
 
 # fruit=['banana','apple','orange'].asc()
