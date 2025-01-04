@@ -1,5 +1,9 @@
 str = "HELLO"
 print(str)
-str = "hello"
+str = "hELLO"
 print(str)
-print('h' in str)
+print('H' in str)
+# ==
+# !=
+# in
+# not in

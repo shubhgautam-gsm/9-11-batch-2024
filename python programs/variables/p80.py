@@ -3,7 +3,8 @@ flag = 0
 for i in list:
  print("Current element:",i,end=" ");
  if i==3:
-  pass;
+  pass; # blank process/ blank if condition
+  break
  #blank process/ blank if condition   
 
   
