@@ -11,7 +11,12 @@ print('jaydeep Book\rmeet Book') # return carriage return from start
 # overide from first index after \r removes first characters and 
 # overides characters after \r
 print('6 hello this is\r7')
+# OCTAL \ooo 3
 print('Character with octal value \111 ')
 #A backslash followed by three integers will result in a octal value:
 txt = "\110\145\154\154\157 "
 print(txt) 
+# hex \xHH 2
+txt2 = "\x54\x564"
+print(txt2) 
+
