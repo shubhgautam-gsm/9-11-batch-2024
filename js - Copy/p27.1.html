@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Shuffling and Matching Strings</h2>
+    <p id="demo"></p>
+    <script>
+        let pass = 'BCA';
+        let theive = "ABC";
+        let tries = 0; // Initialize a counter for the number of tries
+
+        // Iterate 27 times to shuffle and check
+        for (let i = 0; i < 27; i++) {
+            tries++; // Increment the counter for each attempt
+            
+            // Shuffle the string `theive`
+            theive = theive.split('').sort(() => Math.random() - 0.5).join('');
+            
+            // Display the shuffled result
+            document.getElementById("demo").innerHTML += `<br>Try ${tries}: Theive is: ${theive}`;
+            
+            // Check if shuffled `theive` matches `pass`
+            if (theive === pass) {
+                document.getElementById("demo").innerHTML += ` <h1> - Match found! Pass is: ${pass}</h1>`;
+                break;
+            }
+        
+        }
+    </script>
+</body>
+</html>

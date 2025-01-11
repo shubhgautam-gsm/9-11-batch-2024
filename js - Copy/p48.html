@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript instanceof Example 1: Checking Array Instance</h1>
+
+<p id="demo"></p>
+
+<script>
+    jay='12'
+    let numbers =new Number(jay);  // an array
+
+    // Using instanceof to check if 'numbers' is an instance of Array
+    //numbers ee Array no udarharan (instanceof) che ?
+    if (numbers instanceof  Number ) {
+        document.getElementById("demo").innerHTML = numbers+5+"'numbers' is an instance of Array!";
+    } else {
+        document.getElementById("demo").innerHTML = "'numbers' is not an instance of Array!";
+    }
+</script>
+
+</body>
+</html>

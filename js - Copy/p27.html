@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Redeclaring a Variable Using let</h2>
+    <p id="demo"></p>
+    <script>
+        let mobile = ['s6','s7','s8','s9','pro30','iphone6','iphone7','iphone8',
+        'iphone9pro','phone6','phone7','phone8','phone12pro'];
+
+        user=prompt('Write which company Mobile u want ').toLowerCase();
+        if(user=='samsung'){
+            // India 
+            //let mobile = ['s6','s7','s8','s9','pro30']; //local | private
+
+            document.getElementById("demo").innerHTML = 'samsung category is ' + mobile.slice();
+           //document.getElementById("demo").innerHTML = 'samsung category is ' + mobile.slice(1,2);
+           //document.getElementById("demo").innerHTML = 'samsung category is ' + mobile.slice[0];
+           //document.getElementById("demo").innerHTML = 'samsung category is ' + mobile.slice[1];
+           //document.getElementById("demo").innerHTML = 'samsung category is ' + mobile.slice[2];
+
+        }
+
+        else if(user=='iphone'){
+
+          //  let mobile = ['iphone6','iphone7','iphone8','iphone9pro']; 
+            document.getElementById("demo").innerHTML += 'iphone category is: ' + mobile;
+        }
+
+        else if(user=='iphone,samsung'){
+
+            let mobile1 = ['iphone6','iphone7','iphone8','iphone9pro']; 
+            let mobile2 = ['s6','s7','s8','s9','pro30']; //local | private
+            document.getElementById("demo").innerHTML += 'iphone category is: ' + mobile1;
+            document.getElementById("demo").innerHTML += '<br>samsung category is: ' + mobile2;
+        }
+        else if(user=='samsung,iphone'){
+
+            let mobile = ['s6','s7','s8','s9','pro30','iphone6','iphone7','iphone8','iphone9pro']; 
+            document.getElementById("demo").innerHTML += 'samsung and iphone category is: ' + mobile;
+        }
+        else if(user=='nokia'){
+ 
+            let mobile = ['phone6','phone7','phone8','phone12pro']; 
+            document.getElementById("demo").innerHTML += 'iphone category is: ' + mobile;
+        }
+        else{
+            document.getElementById("demo").innerHTML += '<br> mobile is : ' + mobile;
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- 
+THEIVES='ABC'
+THEIVES='ACB'
+THEIVES='BAC'
+THEIVES='CAB'
+THEIVES='BCA'
+
+
+ABC         
+
+AAA
+AAB
+ABC
+BBA
+BCB
+BCC
+CAA
+CAB
+CBC 
+-->

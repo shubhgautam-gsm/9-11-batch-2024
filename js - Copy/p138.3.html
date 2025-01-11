@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Product List</h1>
+  <p id="product-list"></p>
+
+  <script>
+    // Example: Generating a Product List
+    const products = [
+      { name: "Laptop", price: "$999.22" ,color:'red'},
+      { name: "Smartphone", price: "$699" },
+      { name: "Tablet", price: "$499" },
+      { name: "Ipad", price: "$699" }
+    ];
+
+    // Initialize HTML for the product list
+    let productHTML = "<ol>";
+
+    // Initialize total price
+    let totalPrice = 0;
+
+    // Loop through products to generate the list and calculate total
+    for (const product of products) {
+      productHTML += `<li>${product.name} - ${product.price}</li>`;
+      
+      // Convert price string to number and add to total
+      totalPrice +=parseFloat(product.price.replace("$","")) ;
+    }
+
+    // Close the ordered list
+    productHTML += "</ol>";
+
+    // Add total price to the HTML
+    productHTML += `<p><strong>Total Price:</strong> <b style='color:red'>$${totalPrice.toFixed(2)}</b> </p>`;
+
+    // Inject the generated HTML into the page
+    document.getElementById("product-list").innerHTML = productHTML;
+  </script>
+</body>
+</html>

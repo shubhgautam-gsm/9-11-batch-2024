@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body onload="displayDate()">
+  <h1>JavaScript HTML Events</h1>
+  <h2>Display Date Automatically</h2>
+  <button onclick="displayDate()">Click me!</button>
+  <button onmouseover="displayDate()">Hover over me!</button>
+  <p id="demo">THIS IS DATE</p>
+</body>
+<script>
+  function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+  }
+</script>
+</html>

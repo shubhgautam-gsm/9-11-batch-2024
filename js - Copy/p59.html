@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Creating JavaScript Objects</h1>
+    <h2>Using JavaScript Objects</h2>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        // Create an Object
+        const mobile = {
+            company: {
+                samsung: { 
+                    color: ['red', 'green', 'black'],
+                    model: ['s12', 's13', 's14'],
+                    all: () => [...mobile.company.samsung.color, ...mobile.company.samsung.model]
+                },
+                iphone: {
+                    color: ['redgold', 'golden', 'silver'],
+                    model: ['iphone5', 'iphone6', 'iphone7']
+                }
+            },
+            color: ['white', 'black']
+        };
+
+        // Assigning samsung to a variable for reuse
+        const Samsung = mobile.company.samsung;
+
+        // Display Object Content
+        document.getElementById("demo").innerHTML =
+            `Samsung: Colors - ${Samsung.color}, Models - ${Samsung.model}<br>
+            iPhone: Colors - ${mobile.company.iphone.color}`;
+
+        // Display the combined array from the all() method
+        document.getElementById("demo2").innerHTML =
+            `Samsung Combined Array: ${Samsung.all()}`;
+
+        console.log(mobile);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+function percentage(maths,sci,guj) {
+   return (maths+sci+guj)/3;
+}
+
+let jaydeep= percentage(23,54,66);
+document.getElementById("demo1").innerHTML = jaydeep;
+let jiya = percentage(53,54,66);
+document.getElementById("demo2").innerHTML = jiya;
+let ram = percentage(63,64,66);
+document.getElementById("demo3").innerHTML = ram;
+</script>
+
+</body>
+</html>
+<!-- #include <stdio.h>
+
+    int calculateTotalCost(int price, int quantity) {
+        int total = price * quantity;
+         printf("Total cost: %d\n", total);
+    
+    }
+    
+    int main() {
+        int totalCost = calculateTotalCost(10, 2);
+        printf("Total cost: %d\n", totalCost);
+    
+        // Use the calculated total for further calculations
+        int discountedPrice = totalCost * 0.9;
+        printf("Discounted price: %d\n", discountedPrice);
+    
+        return 0;
+    } -->

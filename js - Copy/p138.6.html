@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Product List</h1>
+    <p id="product-list"></p>
+
+    <script>
+        //x=document.getElementById("product-list").innerHTML = products[0].name 
+        // Example: Generating a Product List
+        const products = [
+            { name: "Laptop", price: "$999" },
+            { name: "Smartphone", price: "$699" },
+            { name: "Tablet", price: "$499" }
+        ];
+
+        // Inject into the 
+        //method 1 overide only show last
+         //   document.getElementById("product-list").innerHTML = products[0].name + " " + products[0].price +'<br>';
+        //   document.getElementById("product-list").innerHTML = products[1].name + " " + products[1].price+'<br>';
+        //   document.getElementById("product-list").innerHTML = products[2].name + " " + products[2].price+'<br>';]
+        
+        //method 2 conact new one so all shows
+       // document.getElementById("product-list").innerHTML = products[0].name + " " + products[0].price + '<br>';
+       // document.getElementById("product-list").innerHTML += products[1].name + " " + products[1].price + '<br>';
+       // document.getElementById("product-list").innerHTML += products[2].name + " " + products[2].price + '<br>';
+
+
+        
+        document.getElementById("product-list").innerHTML =` ${products[0].name}  ${products[0].price}  <br>`;
+        document.getElementById("product-list").innerHTML +=` ${products[1].name}  ${products[1].price}  <br>`;
+        document.getElementById("product-list").innerHTML +=` ${products[2].name}  ${products[2].price}  <br>`;
+    </script>
+</body>
+
+</html>

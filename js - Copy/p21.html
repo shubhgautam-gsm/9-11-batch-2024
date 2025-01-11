@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h1 id="demo2"></h1>
+    <script>
+        {
+            var mukesh_bankdetails=20;// using var keyword use as global variable
+            let rakesh_bankdetails=30;// using var keyword use as local variable
+        }
+        theive = mukesh_bankdetails;
+        theive2 = rakesh_bankdetails;//stop
+        document.getElementById("demo").innerHTML ='first theive access '+ theive;
+        document.getElementById("demo2").innerHTML ='second theive access '+ theive2;
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Display Properties</h2>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+// Create an Object
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+// Build a Text
+let text = "";
+text= text +person["name"] + " "; // text =("" + "John" + " "); final text ="John  ";
+document.getElementById("demo1").innerHTML = text;
+
+text=text + person["age"]  + " ";// text =("John  " + "30" + " "); final text ="John 30 ";
+document.getElementById("demo2").innerHTML = text;
+
+text=text + person["city"] + " ";// text =("John 30 " + "New York" + " "); final text ="John 30 New York ";
+document.getElementById("demo3").innerHTML = text;
+</script>
+
+</body>
+</html>

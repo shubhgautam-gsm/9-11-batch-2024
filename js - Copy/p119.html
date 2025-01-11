@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Methods</h1>
+<p>Try to replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">I love cats. Cats are very easy to love. Cats are very popular.</p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML; 
+  
+  text = text.replaceAll("Cats","Dogs");
+  text = text.replaceAll("cats","dogs");
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+<p>The replace() method is case sensitive. MICROSOFT (with upper-case) will not be replaced.</p>
+
+</body>
+</html>

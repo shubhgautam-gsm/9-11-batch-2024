@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Redeclaring a Variable Using let</h2>
+    <p id="demo"></p>
+    <script>
+        let rich = 'billgatez';//global variable
+        
+        {
+            // India 
+            let rich = 'mukesh ambani'; //local | private
+            document.getElementById("demo").innerHTML = 'Richest person in India: ' + rich;
+        }
+
+        {
+            // Indonesia
+            let rich = 'mark zuckerberg'; //local | private
+            document.getElementById("demo").innerHTML += '<br>Richest person in Indonesia: ' + rich;
+        }
+
+        document.getElementById("demo").innerHTML += '<br>Richest person in the world: ' + rich;
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript instanceof Example 2: Custom Class Instance</h1>
+
+<p id="demo"></p>
+
+<script>
+// Custom class definition
+class Cars {
+    constructor(name, color) {
+        this.name = name;
+        this.color = color;
+    }
+}
+
+let tata= new Cars("rmi", 30); // create an instance of Person
+let bmw = new Cars("rg7", 30); // an object that is NOT an instance of Person
+
+// Using instanceof to check if 'person1' is an instance of Person
+if (tata instanceof Cars) {
+    document.getElementById("demo").innerHTML = "'tata' is an instance of Cars!";
+} else {
+    document.getElementById("demo").innerHTML = "'tata' is not an instance of Cars!";
+}
+
+// Additional check for 'person2'
+if (bmw instanceof Cars) {
+    document.getElementById("demo").innerHTML += "<br>'bmw' is an instance of Cars!";
+} else {
+    document.getElementById("demo").innerHTML += "<br>'bmw' is not an instance of Cars!";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Objects are Mutable</h2>
+
+<p>Changes to a copy of an object will also change the original object:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Object
+const person = [5,2,4];
+
+// Create a Copy
+const x = person;
+
+// Change Age
+x[1]='jay';
+//call by refrence
+document.getElementById("demo").innerHTML =
+person[1] + " is " + x[0] + " years old.";
+</script>
+
+</body>
+</html>
