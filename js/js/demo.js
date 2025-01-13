@@ -10,3 +10,15 @@ function change() {
         document.getElementById('chg').style.display = 'block';
     }
 }
+
+
+
+
+function bulbon(){
+    document.getElementById('bulb').src = '../images/pic_bulbon.gif'
+     document.getElementById('bulb').style.border = '2px solid red'
+}
+function bulboff(){
+    document.getElementById('bulb').src = '../images/pic_bulboff.gif'
+}
+

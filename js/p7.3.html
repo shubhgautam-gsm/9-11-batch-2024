@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+
+<h2>Simple Calculator</h2>
+<p>The result is: <span id="result">0</span></p>
+
+<!-- Buttons -->
+<button value="1" id="btn1" onclick="setValue(this.value)">1</button>
+<button value="2" id="btn2" onclick="setValue(this.value)">2</button>
+<button value="3" id="btn3" onclick="setValue(this.value)">3</button><br>
+<button value="4" id="btn4" onclick="setValue(this.value)">4</button>
+<button value="5" id="btn5" onclick="setValue(this.value)">5</button>
+<button value="6" id="btn6" onclick="setValue(this.value)">6</button><br>
+<button value="7" id="btn7" onclick="setValue(this.value)">7</button>
+<button value="8" id="btn8" onclick="setValue(this.value)">8</button>
+<button value="9" id="btn9" onclick="setValue(this.value)">9</button><br>
+<button value="0" id="btn0" onclick="setValue(this.value)">0</button>
+<button value="+" id="btnAdd" onclick="setOperation(this.value)">+</button>
+<button value="=" id="btnEqual" onclick="calculate()">=</button>
+
+<script>
+    let num1 = "";
+    let num2 = "";
+    let operation = null;
+
+    function setValue(value) {
+        if (!operation) {
+            num1 += value;
+        } else {
+            num2 += value;
+        }
+        updateResult();
+    }
+
+    function setOperation(op) {
+        if (num1) {
+            operation = op;
+        }
+        updateResult();
+    }
+
+    function calculate() {
+        if (num1 && num2 && operation) {
+            let result = 0;
+            switch (operation) {
+                case "+":
+                   //um1&&num2
+                   result = parseFloat(num1) + parseFloat(num2);
+
+                 // num1&&num2&&num3
+                 // result = parseFloat(num1) + parseFloat(num2)+parseFloat(num3);
+                 case "-":
+                 //um1&&num2
+                 result = parseFloat(num1) + parseFloat(num2);
+
+                    break;
+                // Additional operations can be added here
+                default:
+                    result = "Error";
+            }
+            num1 = result.toString();
+            num2 = "";
+            operation = null;
+            updateResult();
+        }
+    }
+
+    function updateResult() {
+        const display = operation ? `${num1} ${operation} ${num2}` : num1;
+        document.getElementById("result").innerText = display || "0";
+    }
+</script>
+
+</body>
+</html>
