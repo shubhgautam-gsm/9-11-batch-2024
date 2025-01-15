@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Colors</title>
+</head>
+
+<body>
+    <h1 class="demo">hello u win</h1>
+    <h1 class="demo">hello</h1>
+    <h1 class="demo">hello</h1>
+
+    <script>
+        let elements = document.getElementsByClassName("demo");
+        ['abc','bca']
+        for (let i = 0; i < elements.length; i++) {
+            // Generate random RGB values
+            let red = Math.floor(Math.random() * 256);
+            let green = Math.floor(Math.random() * 256);
+            let blue = Math.floor(Math.random() * 256);
+
+            // Set the random color
+            elements[i].style.color = ` rgb(${red}, ${green}, ${blue})`;
+            elements[i].innerHTML += ` colorcode is ${red} ${green} ${blue}`;
+        }
+
+    </script>
+</body>
+
+</html>

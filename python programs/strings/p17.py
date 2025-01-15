@@ -5,4 +5,4 @@ str = "Welcome to the Javatpoint."
 str2 = str.index("to")
 # Displaying result
 print(str2)
-# 
+# index() give error if not in string

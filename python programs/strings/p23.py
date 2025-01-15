@@ -5,3 +5,5 @@ str = "javatpoint"
 str2 = str.islower()
 # Displaying result
 print(str2)
+
+
