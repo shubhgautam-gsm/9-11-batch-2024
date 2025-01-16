@@ -19,9 +19,12 @@
     try {
       const car = {type:"Fiat", model:"500", color:"white"};
       car = {type:"Volvo", model:"EX60", color:"red"};// not stop code when reassign 
+      //car.company = 'tata'
+      console.log(car);
     }
     catch (err) {
-      document.getElementById("demo").innerHTML = err;
+     // document.getElementById("demo").innerHTML = err;
+      console.log(err);
     }
     document.getElementById("demo2").innerHTML = 'after error not stopping';
     console.log('after using try-catch it not stop code')

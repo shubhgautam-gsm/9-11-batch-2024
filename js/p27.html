@@ -12,7 +12,7 @@
             // India 
             //let mobile = ['s6','s7','s8','s9','pro30']; //local | private
 
-            document.getElementById("demo").innerHTML = 'samsung category is ' + mobile.slice();
+            document.getElementById("demo").innerHTML = 'samsung category is ' + mobile.slice(0,4);
            //document.getElementById("demo").innerHTML = 'samsung category is ' + mobile.slice(1,2);
            //document.getElementById("demo").innerHTML = 'samsung category is ' + mobile.slice[0];
            //document.getElementById("demo").innerHTML = 'samsung category is ' + mobile.slice[1];
@@ -23,7 +23,7 @@
         else if(user=='iphone'){
 
           //  let mobile = ['iphone6','iphone7','iphone8','iphone9pro']; 
-            document.getElementById("demo").innerHTML += 'iphone category is: ' + mobile;
+            document.getElementById("demo").innerHTML += 'iphone category is: ' +  mobile.slice(0,4);;
         }
 
         else if(user=='iphone,samsung'){

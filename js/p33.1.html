@@ -11,19 +11,23 @@
 <script>
 // Create an Array:
 const cars = ["Saab", "Volvo", "BMW"];
+
 document.getElementById("demo").innerHTML = cars; 
 
 // Freeze the array:
 Object.freeze(cars);
 
 // Try to change an element:
-cars[0] = "Toyota"; // This will not work
+cars[0] = "Tosyota"; // This will not work
 
 // Try to add an element:
 cars.push("Audi"); // This will not work
 
 // Display the Array:
 document.getElementById("demo").innerHTML = cars; 
+
+
+
 </script>
 
 </body>
