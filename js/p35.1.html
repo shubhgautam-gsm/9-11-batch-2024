@@ -7,19 +7,23 @@
 <p>Declaring a constant object does NOT make the objects properties unchangeable:</p>
 
 <p id="demo"></p>
-
+<p id="demo1"></p>
+<p id="demo2"></p>
 <script>
 // Create an object:
 const car = {type:"Fiat", model:"500", color:"white"};
-
+//const car= ['fiat','500','white']
 // Change a property:
 car.color = "red";
-
+//car[2] = "yellow";
 // Add a property:
-car.owner = "Johnson";
+//car.owner = "Johnson";
 
 // Display the property:
-document.getElementById("demo").innerHTML =  car; 
+document.getElementById("demo").innerHTML =  car.color; 
+document.getElementById("demo1").innerHTML =  Object.keys(car);
+document.getElementById("demo2").innerHTML =  Object.values(car);  
+//document.getElementById("demo").innerHTML =  car[2]; 
 console.log(car)
 
 //document.getElementById("demo").innerHTML = "Car owner is " + car['owner'] +

@@ -1,6 +1,6 @@
 # user='bloody jaydeep'
 # user='Fool jaydeep'.lower()
-user='Fucd aydeep'.lower()
+user='Fucd jaydeep'.lower()
 # user='Fusd aydeep'.lower()
 if 'bloody' in user:
     print(user.lstrip('bloody'))
