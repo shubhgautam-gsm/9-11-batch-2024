@@ -21,3 +21,4 @@ print("Reversed list:", my_list)
 # sort([func]) - sorting the list
 my_list.sort()
 print("Sorted list:", my_list)
+

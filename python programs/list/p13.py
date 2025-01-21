@@ -12,7 +12,10 @@ print("After clearing the list:", my_list)
 # copy() - creating a shallow copy of the list
 original_list = [1, 2, 3]
 copied_list = original_list.copy()
-print("Copied list:", copied_list)
+# copied_list = original_list if use this without 
+# copy() change original_list
+copied_list.append(5)
+print("Copied list:",original_list)
 
 # count(obj) - counting occurrences of an object in the list
 my_list = [1, 2, 3, 4, 5, 2, 3]

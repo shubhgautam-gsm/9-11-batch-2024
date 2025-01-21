@@ -1,5 +1,6 @@
 list1=[1,2,3]
 list=['ram','shyam','jay','rakesh']
+# Products=({"proname":"shoes","id":"1"},{"proname":"laptop","id":"2"})
 Products=[{
    "proname":"shoes",
    "id":"1"
@@ -9,6 +10,19 @@ Products=[{
    "id":"2"
    }]
 
+# dropdown
+
+# product_list ={'cat':'shoes','name':'reebok','price':'2000rs'} 
+# product_list ={'cat':'shoes','name':'nike','price':'1000rs'} 
+
+# product = {
+#    "proname":"shoes",
+#    "id":"1"
+#    }
+# product =  {
+#    "proname":"laptop",
+#    "id":"2"
+#    }  overiding so show all products and their associated keys
 
 
 for product in Products:print(product)
