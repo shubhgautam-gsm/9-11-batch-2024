@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="num"></h1>
+    <h1 class="num"></h1>
+    <h1 class="num"></h1>
+    <h1 class="num"></h1>
+    <h1 class="num"></h1>
+    <h1 class="num"></h1>
+
+</body>
+<script>
+
+    let start = parseFloat(prompt('start value'));
+    let end = parseFloat(prompt('end value'));
+    let j=0
+    
+    for(let i=end;i>=start;i--){
+
+        let x = document.getElementsByClassName('num')
+        x[j].innerHTML = i
+        j++;
+    }
+</script>
+<!-- 
+<script>
+
+    let start = parseFloat(prompt('start value'));
+    let end = parseFloat(prompt('end value'));
+   
+    for(let i=end;i>=start;i--){
+
+        let x = document.getElementsByClassName('num')
+        let q=i  
+        let i =i-x.length
+        x[i].innerHTML = q
+    }
+</script> -->
+</html>
+<!-- 
+10<=10
+i++ -->
+
+<!-- 
+0>=0
+i-- -->
