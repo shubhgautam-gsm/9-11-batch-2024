@@ -5,9 +5,10 @@ window.screensize(500, 500)
 pen = turtle.Turtle()
 
 # Move to the starting position
-pen.speed(1)
+pen.speed(1 )
 pen.penup()
-pen.goto(-200, 0)
+#pen.backward(200)
+pen.goto(-200, 100)
 pen.pendown()
 
 # Draw a square with gaps between segments
