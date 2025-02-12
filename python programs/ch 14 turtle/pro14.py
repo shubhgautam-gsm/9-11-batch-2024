@@ -9,7 +9,7 @@ pen.color("red")
 pen.shape("turtle")
 pen.speed(0.1)
 colors = ["red", "blue", "purple", "pink", "yellow", "orange", "gray"]
-width = 100
+width = 100      
 for x in range(1, 500):
     pen.backward(width)
     pen.left(122)
