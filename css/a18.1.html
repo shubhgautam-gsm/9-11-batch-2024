@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div > p {
+      border: 2px solid black;
+      margin-left: 20px; /* Only the direct child p will have this margin */
+      background-color: blueviolet;
+    }
+    
+  
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <p>level1</p>
+    <p>level11</p>
+    <span>level2
+      <p>level3</p>
+    </span>
+  </div>
+
+</body>
+
+</html>
