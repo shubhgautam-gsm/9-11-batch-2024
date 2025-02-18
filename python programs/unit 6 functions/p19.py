@@ -1,4 +1,5 @@
 # local scope sum outside not change
+# args=[10,20,30]
 def calculate(*args):
  sum=0
  for arg in args:

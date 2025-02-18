@@ -9,5 +9,5 @@ def sum(a=1,b=1,c=1):
  c = a+b
  return c
 # calling sum() function in print statement
-print("The sum is:",sum())
+print("The sum is:",sum(a))
 # ans is 2
