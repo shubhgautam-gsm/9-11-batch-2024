@@ -3,5 +3,5 @@
 # It can create empty bytes object of the specified size.
 
 string = "Hello World."
-array = bytes(string, 'utf-8')
+array = bytes(string, 'utf-8') #ansi ,ascii
 print(array)

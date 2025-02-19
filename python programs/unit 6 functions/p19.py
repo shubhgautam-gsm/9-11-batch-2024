@@ -3,7 +3,7 @@
 def calculate(*args):
  sum=0
  for arg in args:
-  sum = sum +arg
+  sum = sum+arg
  print("The sum is",sum)
 
 sum=0

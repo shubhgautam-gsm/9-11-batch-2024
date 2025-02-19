@@ -2,4 +2,4 @@
 
 # integer number
 integer =-20
-print('Absolute value of -40 is:', abs(integer))
+print('Absolute value of -20 is:', abs(integer))
