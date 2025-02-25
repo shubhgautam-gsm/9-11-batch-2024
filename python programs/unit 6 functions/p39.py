@@ -4,5 +4,7 @@ class Person:
   country = "Norway"
 
 x = hasattr(Person, 'age')
+y= hasattr(Person, 'price')
 
 print(x)
+print(y)
