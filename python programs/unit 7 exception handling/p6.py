@@ -24,6 +24,6 @@ except ZeroDivisionError:
 except Exception as e:
     print("An unexpected error occurred:", e)
 finally:
-    print("Hi, I am the else block")
+    print("Hi, I am the finally block run even having errors")
     
 

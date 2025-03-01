@@ -8,3 +8,8 @@ except Exception as e:
     print("An unexpected error occurred:", e)
 else:
     print("Hi, I am the else block")
+
+
+# finally always run but else run when only there is no error
+# finally:
+#     print("Hi, I am the else block")
