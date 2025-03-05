@@ -6,4 +6,4 @@ try:
     else:
         print("a/b = ", a / b)
 except ArithmeticError:
-    print("The value of b can't be 0")
+    print("The value of b can't be 0 not able to divide 'a' by zero")

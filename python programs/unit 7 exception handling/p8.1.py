@@ -5,8 +5,8 @@ def critical_operation(data):
 
 try:
     # data = 1  # Simulating empty data
-    data = None  # Simulating empty data
-    
+    data = 1  # Simulating empty data
+    a=int(input('give val '))
     critical_operation(data)
     print("Critical operation completed successfully.")
 except ValueError as e:
