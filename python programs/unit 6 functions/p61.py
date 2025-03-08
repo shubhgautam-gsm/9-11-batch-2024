@@ -9,4 +9,6 @@ print(result2)
 
 # SECOND WAY
 a = ("a", "b", "c", "d", "e", "f", "g", "h")
-print(a[2:6:3])
+print(a[2:4:2])
+
+# ?
