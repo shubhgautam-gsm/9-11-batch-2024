@@ -2,7 +2,8 @@ class Student:
     id = 101
     name = "Pranshu"
     email = "pranshu@abc.com"
-    course = "Computer Science"  # Added missing class variable
+    course = "Computer Science"
+    # Added missing class variable
 
     # Declaring function
     def getinfo(self):

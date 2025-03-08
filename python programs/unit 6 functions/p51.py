@@ -5,7 +5,9 @@ class Student:
     course = "Computer Science"  # Added missing class variable
 
         
+#            classname  key name
+print(getattr(Student, 'course'))
+# so we get value of above key of Student class
 
-getattr(Student, 'course')
 # Attempting to call getinfo() after removing 'course'
 
