@@ -7,5 +7,5 @@ print(item)
 item = next(number)
 print(item)
 # third item
-item = next(number)
+
 print(item)

@@ -3,7 +3,7 @@
 # for integers
 print(round(10))
 # for floating point
-print(round(10.8))
+print(round(10.6))
 # even choice
 print(round(6.6))
 

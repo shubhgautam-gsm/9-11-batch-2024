@@ -1,1 +1,1 @@
-Transaction details: [Account: 556, Amount: $100]
+Transaction details: [Account: e1120, Amount: $266]Transaction details: [Account: e1120, Amount: $266]

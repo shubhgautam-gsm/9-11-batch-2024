@@ -7,10 +7,10 @@ resultList = list(result)
 print(resultList)
 # Two iterables are passed
 result = zip(numList, strList)
-# Converting iterator to set
-resultSet = set(result)
+resultSet = dict(result)
 print(resultSet)
-# resultSet = list(result)
+# Converting iterator to set
+# resultSet = set(result)
 # print(resultSet)
-# resultSet = dict(result)
+# resultSet = list(result)
 # print(resultSet)
