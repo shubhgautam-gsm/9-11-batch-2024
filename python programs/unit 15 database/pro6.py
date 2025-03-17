@@ -2,7 +2,7 @@ import mysql.connector
 
 try:
     # Connect to MySQL database
-    connection = mysql.connector.connect(host="localhost", user="root", passwd="", database="py1121")
+    connection = mysql.connector.connect(host="localhost", user="root", passwd="", database="newera")
     cursor = connection.cursor()
 
     # Step 1: Add the new column 'id' to the table (added at the end by default)

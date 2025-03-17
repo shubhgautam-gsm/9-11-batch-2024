@@ -4,8 +4,8 @@ try:
     connection = mysql.connector.connect(host="localhost", user="root", passwd="")
     print("Database Connected")
     myCursor = connection.cursor()
-    query = "create database newera"
-    result = myCursor.execute(query)
+    query = "create database newera" 
+    result = myCursor.execute(query) # run the command
     print("Database Created")
 
     connection.close()
