@@ -11,6 +11,18 @@ print("Result of addition:", result_addition)
 result_subtraction = mo.sub(8, 4)
 print("Result of subtraction:", result_subtraction)
 
+# Now, let's modify the math_operations.py module
+with open("math_operations.py", "w") as f:
+    f.write("""
+def sum(a, b):
+    return a + b + 1
+
+def sub(a, b):
+    return a - b - 1
+""")
+
+# Reload the module
+mo = importlib.reload(math_operations)
 
 # Perform addition again with the modified function
 result_addition_modified = mo.sum(5, 3)

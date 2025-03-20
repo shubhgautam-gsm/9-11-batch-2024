@@ -1,3 +1,3 @@
 # __init__.py
-from .ITEmployees import getITNames
-from .BPOEmployees import newgetBPONames,oldgetBPONames
+from  backdeveloper import getITNames
+from frontdeveloper import newgetBPONames,oldgetBPONames

@@ -1,5 +1,5 @@
 import os
-fd = "python.txt"
+fd = "python11.txt"
 # popen() is similar to open()
 
 file = os.popen(fd, 'w')  

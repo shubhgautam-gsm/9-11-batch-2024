@@ -3,9 +3,11 @@ import os
 # Create a file
 with open("Pytho1.txt", "w") as file:
     file.write("This is a test file.")
-
-# Change the permissions to deny read and write access
+    
+print(file)
+# Change the permissions to deny read and write access for everyone
 os.chmod("Pytho1.txt", 0o000)
+
 # Check if the file is readable
 if os.access("Pytho1.txt", os.R_OK):
     print("You have read permission for 'Pytho1.txt'.")

@@ -2,7 +2,7 @@ import os
 
 try:
     # If file does not exist, then it throws an IOError
-    filename = 'pr1.py'
+    filename = 'p1.py'
     with open(filename, 'r') as f:
         text = f.read()
         print(text)

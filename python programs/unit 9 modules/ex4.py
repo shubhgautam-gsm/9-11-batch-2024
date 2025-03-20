@@ -15,9 +15,9 @@ print("Initial Div= ", cal.div(a, b))
 # Reload the module after the initial operation
 cal = importlib.reload(cal)
 
-# Perform square
-x = int(input("Enter a number to square: "))
-print("Square= ", cal.square(x))
+# # Perform square
+# x = int(input("Enter a number to square: "))
+# print("Square= ", cal.square(x))
 
 # Reload the module again
 cal = importlib.reload(cal)
