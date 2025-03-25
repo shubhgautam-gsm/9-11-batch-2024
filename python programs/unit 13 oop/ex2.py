@@ -10,8 +10,10 @@ def make_animal_speak(animal):
     animal.speak()
 
 # Usage
-dog = Dog()
-cat = Cat()
+dog = Dog() #dog obj
+cat = Cat() #cat obj
 
 make_animal_speak(dog)  # Output: Dog says: Woof!
 make_animal_speak(cat)  # Output: Cat says: Meow!
+
+# Dog().speak()

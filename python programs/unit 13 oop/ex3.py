@@ -2,7 +2,8 @@
 
 
 
-class Vehicle():
+class Vehicle(): #vehicles i.e plane ,car ,bike so we cant print 
+# THAT CAR IS STARTED OR AIRPLANE IS STARTED..  
 
     def start(self):
         pass
@@ -44,7 +45,7 @@ class Vehicle:
 
 # Usage of Abstraction
 
-car = Car()
+car = Car() #class
 car.start()  # Output: Car is starting
 
 plane = Plane()

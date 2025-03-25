@@ -10,7 +10,13 @@ person = Person()
 
 # Setting attributes without using __init__
 person.set_name("John")
+# person={name:'john'} obj
 person.set_age(30)
+# person=
+# {
+    # name:'john',
+    # age:30
+# } obj
 
 # Accessing attributes
 print(person.name)  # Output: John

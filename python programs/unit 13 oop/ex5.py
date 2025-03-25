@@ -1,6 +1,7 @@
-from abc import ABC, abstractmethod
+from abc import ABC 
+
 class Shape(ABC):
-    @abstractmethod
+
     def area(self):
         pass
 
@@ -28,7 +29,8 @@ class Triangle(Shape):
         return 0.5 * self.base * self.height
 
 # Usage of Abstraction
-rectangle = Rectangle(5, 4)
+rectangle = Rectangle(10,20)
+# rectangle.mymethod(10,30)
 print("Area of Rectangle:", rectangle.area())  # Output: Area of Rectangle: 20
 
 circle = Circle(3)
@@ -36,3 +38,6 @@ print("Area of Circle:", circle.area())  # Output: Area of Circle: 28.26
 
 triangle = Triangle(4, 3)
 print("Area of Triangle:", triangle.area())  # Output: Area of Triangle: 6.0
+
+
+
