@@ -1,11 +1,11 @@
 from abc import ABC 
 
-class Shape(ABC):
+class Shape(ABC): #main model class 1
 
     def area(self):
         pass
 
-class Rectangle(Shape):
+class Rectangle(Shape): #sub model class 2
     def __init__(self, length, width):
         self.length = length
         self.width = width
@@ -13,14 +13,14 @@ class Rectangle(Shape):
     def area(self):
         return self.length * self.width
 
-class Circle(Shape):
+class Circle(Shape): #sub model class 2
     def __init__(self, radius):
         self.radius = radius
 
     def area(self):
         return 3.14 * self.radius * self.radius
 
-class Triangle(Shape):
+class Triangle(Shape): #sub model class 2
     def __init__(self, base, height):
         self.base = base
         self.height = height

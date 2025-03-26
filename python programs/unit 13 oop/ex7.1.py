@@ -6,12 +6,10 @@ class Employee:
         self.name = name
 
     def display(self):
-        print("ID: %d \nName: %s"%(self.id, self.name))
-
-
+        print("ID:", self.id,"\nName:", self.name) #using this int on id string on name not number
 
 # Creating instances and calling methods
-emp1 = Employee("John", 101)
-emp2 = Employee("David", 102)
+emp1 = Employee("John", "abraham")
+emp2 = Employee("David", 102.2)
 emp1.display()
 emp2.display()
