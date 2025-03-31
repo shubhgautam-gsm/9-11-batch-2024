@@ -7,6 +7,7 @@ class Student:
         self.name = name  # Assigning name attribute
         self.id = id      # Assigning id attribute
         self.age = age    # Assigning age attribute
+        print('std')
 
     # Method to display the details of the student
     def display_details(self):
@@ -16,3 +17,7 @@ class Student:
 
 class Person(Student):  # Student class inherits from Person
     print('person')
+
+
+class Animal(Student):  # Student class inherits from Person
+    print('animal')

@@ -1,11 +1,14 @@
 # Parent class
 class Animal:
     def speak(self):
-        print("Animal Speaking")
+        print("Animal Sounds")
 
 # Child class inheriting from Animal
 class Dog(Animal):
     
+    # def speak(self):
+    #     print("Animal Speaking")
+
     def bark(self):
         print("Dog Barking")
 

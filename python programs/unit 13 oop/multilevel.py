@@ -36,8 +36,8 @@ class WorkingDog(Dog):
 my_dog = WorkingDog("Max", "German Shepherd", "Police work")
 
 # Accessing methods from the base classes
-my_dog.show_species()  # Output: Species: Dog
-my_dog.bark()          # Output: Woof!
+my_dog.show_species()  # Output: Species: Dog   // level 1
+my_dog.bark()          # Output: Woof!   // level 2
 
 # Accessing methods from the intermediate and derived classes
-my_dog.display_info()  # Output: Name: Max, Breed: German Shepherd, Purpose: Police work
+my_dog.display_info()  # Output: Name: Max, Breed: German Shepherd, Purpose: Police work // level 3

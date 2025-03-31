@@ -14,4 +14,9 @@ class Derived(Calculation1, Calculation2):
 d = Derived()
 
 # Check if d is an instance of Derived class
-print(isinstance(d, Derived))  # Output: True
+print(isinstance(d, Calculation1))  # Output: True
+
+
+# tata=5
+# reliance=5
+# abani is tata x
