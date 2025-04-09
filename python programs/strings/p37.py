@@ -1,3 +1,3 @@
 str='hello world'
-print (str.lstrip('/'))
+print (str.lstrip('hel'))
 
