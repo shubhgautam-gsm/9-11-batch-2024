@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT CHANGES HTML CODE </h1>
+    <h2>chnage through class,tagname index need  [0,1,2..]</h2>
+
+    <img src="../imgs/items.jpg" alt="" class="change_img">
+    <img src="../imgs/items.jpg" alt="" class="change_img">
+    <img src="../imgs/items.jpg" alt="" class="change_img">
+    
+    <button onclick="change_name()">click me</button>
+</body>
+<script>
+    function change_name(){
+        document.getElementsByClassName('change_img')[2].src='../imgs/m2.jpeg'
+    }
+</script>
+</html>

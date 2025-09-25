@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My Web Page</h1>
+
+<p id="demo">fff</p>
+<p id="demo2">fff</p>
+
+
+<button onclick="TextvsInnerHtml()">SEE CHANGES</button>
+<script>
+function TextvsInnerHtml(){
+    document.getElementById("demo").innerText = "<i>Hello World</i>";
+    document.getElementById("demo2").innerHTML = "<i>Hello World</i>";
+}
+</script>
+
+</body>
+</html> 
