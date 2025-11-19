@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p id="demo"></p>
+</body>
+
+<script>
+const user = { name: "Alice" };
+
+// Library A adds a property using a Symbol
+const libraryA_id = Symbol('id');
+user[libraryA_id] = "library_A_data";
+
+// Library B adds a property using its own Symbol with the same description
+const libraryB_id = Symbol('id');
+user[libraryB_id] = "library_B_data";
+
+// Both properties exist without overwriting each other
+console.log(user[libraryA_id]); // "library_A_data"
+console.log(user[libraryB_id]); // "library_B_data"
+
+</script>
+</html>

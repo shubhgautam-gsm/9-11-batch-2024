@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: green;
+}
+
+div.first h1{
+  opacity: 0.8;
+  background-color: brown;
+}
+div.first h1.s1{
+    padding: 40px;
+}
+div.first h1.s2{
+    padding: 20px;
+  }
+div.first h1.s1 b{
+margin: 30px;
+color: yellow;
+background-color: darkmagenta;
+padding: 10px;
+  }
+div.first h1.s2 b{
+    margin: 30px;
+    color: rgb(143, 243, 77);
+    background-color: rgb(178, 108, 178);
+padding: 12px;
+}
+
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Transparent Boxes</h1>
+
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+<div class="first">
+  <h1 class="s1"><b>shop</b><b>s</b class><b>s</b><b>s</b>opacity 0.1</h1>
+  <h1 class="s2"><b>system</b><b>s</b><b>s</b><b>s</b>opacity 0.1</h1>
+  <h1><b>s</b><b>s</b><b>s</b></h1>
+  <h1>opacity 0.1</h1>
+  <h1>opacity 0.1</h1>
+  <h2>opacity 0.1</h2>
+</div>
+
+<b>s</b><b>s</b><b>s</b>
+<div class="second">
+  <h1>opacity 0.3</h1>
+  <b>s</b><b>s</b><b>s</b>
+</div>
+
+<div class="third">
+  <h1>opacity 0.6</h1>
+</div>
+
+<div>
+  <h1>opacity 1 (default)</h1>
+</div>
+<h1 class="first">
+    jdjhdh
+</h1>
+</body>
+</html>
+
+

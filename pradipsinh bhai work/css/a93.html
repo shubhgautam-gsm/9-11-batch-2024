@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  0%{left: 100px; background-color: yellow;}
+  50%{left: 0px;}
+  100%{left: 100px;}
+
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>Let the div element get the style values set by the first keyframe before the animation starts (during the animation-delay period):</p>
+
+<div></div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #car1 {
+            transition: margin-left 2s;
+            width: 300px;
+        }
+
+        #car2 {
+            transition: margin-left 2s;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="car1" src="../imgs/car1.jpg" alt="">
+    <hr>
+    <img id="car2" src="../imgs/car2.jpg" alt="">
+
+    <button onclick="forward()">
+        Move Cars Forward
+    </button>
+</body>
+<script>
+    let c1 = 0;
+    let c2 = 0;
+
+
+
+    function randomvalue() {
+        return Math.round(Math.random() * 500);//  RANDOM VALUE BETWEEN 0 TO 1 (0.3 , 0.78 etc) *10
+    }
+
+
+    function forward() {
+        // Car 1 movement
+        c1 = c1 + randomvalue();
+        document.getElementById('car1').style.marginLeft = c1 + "px";
+
+        // Car 2 movement
+        c2 = c2 + randomvalue();
+        document.getElementById('car2').style.marginLeft = c2 + "px";
+    }
+
+
+
+</script>
+
+</html>

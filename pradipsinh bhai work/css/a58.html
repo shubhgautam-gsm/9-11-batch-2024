@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.test1{
+            width: 100px;
+            border: 2px solid black;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        div.test1:hover{
+            overflow: visible;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The text-overflow Property</h1>
+    <p>The following two paragraphs contains a long text that will not fit in the box.</p>
+
+    <h2>text-overflow: clip:</h2>
+    <div class="test1" style="text-overflow: clip;">
+       This is some long text that will not fit in the box
+    </div>
+
+    <h2>text-overflow: ellipsis:</h2>
+    <div class="test1" style="text-overflow:ellipsis;">
+        This is some long text that will not fit in the box
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: hsla(120, 100%, 25%, 0.585);
+}
+
+div.first {
+  color:rgba(255, 0, 0, 0.652);
+  border: 5px solid rgba(0, 0, 0, 0.337);
+}
+
+div.second {
+  opacity: 0.3;
+  color:rgb(255, 0, 0);
+  border: 5px solid rgb(0, 0, 0);
+}
+
+div.third {
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<h1>Transparent Boxes</h1>
+
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+<div class="first">
+  <h1>opacity 0.1</h1>
+</div>
+<br><br>
+<div class="second">
+  <h1>opacity 0.3</h1>
+</div>
+
+<div class="third">
+  <h1>opacity 0.6</h1>
+</div>
+
+<div>
+  <h1>opacity 1 (default)</h1>
+</div>
+<span class="third">hello</span>
+
+</body>
+</html>
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+        }
+        ul li{
+            float: left;
+            
+            background-color: brown;
+        }
+        li a{
+           padding:20px ;
+           display: block;
+           height: 100%;
+           text-decoration: none;
+           color: aliceblue;
+        }
+        a:hover:not(.active){
+            background-color: black;
+        }
+        .active{
+            background-color: rgb(6, 73, 8);
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="active">TAB1</a></li>
+        <li><a href="#">TAB1</a></li>
+        <li><a href="#">TAB1</a></li>
+        <li><a href="#">TAB1</a></li>
+    </ul>
+</body>
+</html>

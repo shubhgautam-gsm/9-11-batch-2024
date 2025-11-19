@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Audiovisual Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #d7d7d7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .anton-font {
+            font-family: 'Anton', sans-serif;
+        }
+        .progress-bar {
+            background-color: #bf8aff;
+            transition: width 0.5s ease-in-out;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div id="app" class="relative w-full max-w-2xl bg-gray-900 bg-opacity-80 backdrop-blur-md rounded-3xl shadow-xl overflow-hidden p-6 sm:p-10 border border-gray-700">
+        
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="flex flex-col items-center justify-center text-center p-6">
+            <h1 class="anton-font text-5xl sm:text-7xl lg:text-8xl text-purple-400 leading-tight tracking-tight mb-4">Noomo Beat</h1>
+            <p class="text-xl sm:text-2xl text-white mb-8">an immersive AI audiovisual experience</p>
+            <button id="start-btn" class="bg-purple-400 text-black anton-font text-lg px-8 py-3 rounded-full hover:bg-white transition-colors duration-300">
+                Start
+            </button>
+        </div>
+
+        <!-- Questionnaire Section -->
+        <div id="questionnaire-screen" class="hidden">
+            <div id="question-1" data-step="1" class="question-step flex flex-col justify-center text-center fade-in">
+                <h2 class="anton-font text-3xl sm:text-4xl lg:text-5xl text-purple-400 mb-6">What genre of music do you prefer?</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Beats</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Rock</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Hip Hop</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Pop</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Latin</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">House</button>
+                </div>
+            </div>
+
+            <div id="question-2" data-step="2" class="question-step hidden flex-col justify-center text-center fade-in">
+                <h2 class="anton-font text-3xl sm:text-4xl lg:text-5xl text-purple-400 mb-6">Which mood do you want your music to evoke?</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Happy</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Epic</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Dark</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Romantic</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Mysterious</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Sad</button>
+                </div>
+            </div>
+
+            <div id="question-3" data-step="3" class="question-step hidden flex-col justify-center text-center fade-in">
+                <h2 class="anton-font text-3xl sm:text-4xl lg:text-5xl text-purple-400 mb-6">Any themes you'd like for the music?</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Technology</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Sci-Fi</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Cinematic</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Fashion</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Gaming</button>
+                    <button class="choice-btn bg-gray-800 text-white rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">Drama</button>
+                </div>
+            </div>
+
+            <div id="question-4" data-step="4" class="question-step hidden flex-col justify-center text-center fade-in">
+                <h2 class="anton-font text-3xl sm:text-4xl lg:text-5xl text-purple-400 mb-6">Select your favorite color</h2>
+                <div class="grid grid-cols-4 sm:grid-cols-6 gap-4">
+                    <button class="color-btn w-12 h-12 rounded-full ring-2 ring-transparent hover:ring-white transition-all duration-200" style="background-color:#FF9D00;" data-color="Orange"></button>
+                    <button class="color-btn w-12 h-12 rounded-full ring-2 ring-transparent hover:ring-white transition-all duration-200" style="background-color:#FF00EA;" data-color="Pink"></button>
+                    <button class="color-btn w-12 h-12 rounded-full ring-2 ring-transparent hover:ring-white transition-all duration-200" style="background-color:#9CF0E1;" data-color="Cyan"></button>
+                    <button class="color-btn w-12 h-12 rounded-full ring-2 ring-transparent hover:ring-white transition-all duration-200" style="background-color:#FF0004;" data-color="Red"></button>
+                    <button class="color-btn w-12 h-12 rounded-full ring-2 ring-transparent hover:ring-white transition-all duration-200" style="background-color:#4F80E3;" data-color="Blue"></button>
+                    <button class="color-btn w-12 h-12 rounded-full ring-2 ring-transparent hover:ring-white transition-all duration-200" style="background-color:#D7D3F4;" data-color="Lavender"></button>
+                    <button class="color-btn w-12 h-12 rounded-full ring-2 ring-transparent hover:ring-white transition-all duration-200" style="background-color:#FFEA00;" data-color="Yellow"></button>
+                    <button class="color-btn w-12 h-12 rounded-full ring-2 ring-transparent hover:ring-white transition-all duration-200" style="background-color:#00FF9D;" data-color="Green"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="hidden flex-col items-center justify-center text-center p-6">
+            <h3 class="anton-font text-3xl sm:text-4xl text-purple-400 mb-8">Generating your experience...</h3>
+            <div class="w-full h-2 bg-gray-700 rounded-full mb-4 overflow-hidden">
+                <div id="progress-bar" class="h-full progress-bar" style="width: 0%;"></div>
+            </div>
+            <p id="progress-text" class="text-sm">0%</p>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="hidden flex-col items-center text-center p-6">
+            <h3 class="anton-font text-3xl sm:text-4xl text-purple-400 mb-6">Your Creation</h3>
+            
+            <!-- Album Cover -->
+            <div class="w-full max-w-sm mb-6">
+                <div id="image-loading-text" class="text-sm text-gray-400">Generating album cover...</div>
+                <img id="album-cover" src="" alt="AI-Generated Album Cover" class="w-full rounded-2xl shadow-lg mt-2 hidden" />
+            </div>
+
+            <div id="result-box" class="w-full bg-gray-800 rounded-xl p-6 sm:p-8 text-white text-base sm:text-lg text-left">
+                <!-- AI-generated text will be injected here -->
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
+                <button id="read-aloud-btn" class="bg-blue-500 text-white anton-font text-lg px-8 py-3 rounded-full hover:bg-blue-600 transition-colors duration-300">
+                    ✨ Read Aloud
+                </button>
+                <button id="regenerate-btn" class="bg-purple-400 text-black anton-font text-lg px-8 py-3 rounded-full hover:bg-white transition-colors duration-300">
+                    Regenerate
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+            const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+            const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+            const screens = {
+                welcome: document.getElementById('welcome-screen'),
+                questionnaire: document.getElementById('questionnaire-screen'),
+                loading: document.getElementById('loading-screen'),
+                result: document.getElementById('result-screen'),
+            };
+
+            const startBtn = document.getElementById('start-btn');
+            const questions = Array.from(document.querySelectorAll('.question-step'));
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+            const resultBox = document.getElementById('result-box');
+            const regenerateBtn = document.getElementById('regenerate-btn');
+            const albumCover = document.getElementById('album-cover');
+            const imageLoadingText = document.getElementById('image-loading-text');
+            const readAloudBtn = document.getElementById('read-aloud-btn');
+
+            let currentStep = 0;
+            const userSelections = {};
+            let audio = null;
+
+            const showScreen = (screenName) => {
+                Object.values(screens).forEach(screen => screen.classList.add('hidden'));
+                screens[screenName].classList.remove('hidden');
+                screens[screenName].classList.add('flex');
+            };
+
+            const updateProgressBar = (progress) => {
+                progressBar.style.width = `${progress}%`;
+                progressText.textContent = `${progress}%`;
+            };
+
+            // Helper function to convert PCM audio to WAV blob
+            const pcmToWav = (pcmData, sampleRate) => {
+                const pcm16 = new Int16Array(pcmData);
+                const buffer = new ArrayBuffer(44 + pcm16.length * 2);
+                const view = new DataView(buffer);
+
+                // WAV header
+                const writeString = (str) => {
+                    for (let i = 0; i < str.length; i++) {
+                        view.setUint8(view.byteOffset + i, str.charCodeAt(i));
+                    }
+                };
+
+                // RIFF chunk
+                writeString('RIFF');
+                view.setUint32(4, 36 + pcm16.length * 2, true);
+                writeString('WAVE');
+
+                // fmt chunk
+                writeString('fmt ');
+                view.setUint32(16, 16, true);
+                view.setUint16(20, 1, true); // format code PCM
+                view.setUint16(22, 1, true); // number of channels
+                view.setUint32(24, sampleRate, true);
+                view.setUint32(28, sampleRate * 2, true);
+                view.setUint16(32, 2, true); // block align
+                view.setUint16(34, 16, true); // bits per sample
+
+                // data chunk
+                writeString('data');
+                view.setUint32(40, pcm16.length * 2, true);
+
+                // write PCM data
+                for (let i = 0; i < pcm16.length; i++) {
+                    view.setInt16(44 + i * 2, pcm16[i], true);
+                }
+
+                return new Blob([view], { type: 'audio/wav' });
+            };
+
+
+            const generateAudio = async (text) => {
+                readAloudBtn.textContent = 'Generating Audio...';
+                readAloudBtn.disabled = true;
+
+                if (audio) {
+                    audio.pause();
+                    audio = null;
+                }
+
+                try {
+                    const apiKey = "";
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`;
+
+                    const payload = {
+                        contents: [{
+                            parts: [{ text: `Say in an informative tone: ${text}` }]
+                        }],
+                        generationConfig: {
+                            responseModalities: ["AUDIO"],
+                            speechConfig: {
+                                voiceConfig: { prebuiltVoiceConfig: { voiceName: "Kore" } }
+                            }
+                        }
+                    };
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`TTS API error: ${response.statusText}`);
+                    }
+
+                    const result = await response.json();
+                    const audioData = result?.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
+                    const mimeType = result?.candidates?.[0]?.content?.parts?.[0]?.inlineData?.mimeType;
+
+                    if (audioData && mimeType && mimeType.startsWith("audio/")) {
+                        const sampleRateMatch = mimeType.match(/rate=(\d+)/);
+                        const sampleRate = sampleRateMatch ? parseInt(sampleRateMatch[1], 10) : 24000;
+                        const pcmData = Uint8Array.from(atob(audioData), c => c.charCodeAt(0));
+                        const wavBlob = pcmToWav(pcmData, sampleRate);
+                        const audioUrl = URL.createObjectURL(wavBlob);
+                        
+                        audio = new Audio(audioUrl);
+                        audio.play();
+
+                        audio.onended = () => {
+                            readAloudBtn.textContent = '✨ Read Aloud';
+                            readAloudBtn.disabled = false;
+                        };
+                        readAloudBtn.textContent = 'Playing...';
+
+                    } else {
+                        throw new Error('Invalid audio data received');
+                    }
+                } catch (error) {
+                    console.error('Audio generation failed:', error);
+                    readAloudBtn.textContent = 'Audio Error';
+                    readAloudBtn.disabled = false;
+                }
+            };
+
+            const generateContentAndImage = async () => {
+                showScreen('loading');
+                updateProgressBar(0);
+
+                let progress = 0;
+                const progressInterval = setInterval(() => {
+                    progress += Math.floor(Math.random() * 15) + 5;
+                    if (progress >= 100) {
+                        progress = 99;
+                        clearInterval(progressInterval);
+                    }
+                    updateProgressBar(progress);
+                }, 500);
+
+                const textPrompt = `Write a short, creative, and evocative description for an AI-generated audiovisual experience.
+                Use the following attributes:
+                Genre: ${userSelections.genre}
+                Mood: ${userSelections.mood}
+                Theme: ${userSelections.theme}
+                Primary Color: ${userSelections.color}
+                Make the description sound like it was generated by a digital consciousness, blending sensory details of sound and light. Be concise and poetic.`;
+
+                const imagePrompt = `A highly detailed, abstract album cover art, 3D digital render. The primary theme is ${userSelections.theme} with a ${userSelections.mood} atmosphere. The dominant color is ${userSelections.color}. The style should be futuristic and sleek.`;
+
+                try {
+                    const apiKey = "";
+                    const textApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+                    const imageApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`;
+
+                    // Text Generation
+                    const textPayload = { contents: [{ parts: [{ text: textPrompt }] }] };
+                    const textResponse = fetch(textApiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(textPayload)
+                    });
+
+                    // Image Generation
+                    const imagePayload = {
+                        instances: [{ prompt: imagePrompt }],
+                        parameters: { sampleCount: 1 }
+                    };
+                    const imageResponse = fetch(imageApiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(imagePayload)
+                    });
+
+                    const [textResult, imageResult] = await Promise.all([textResponse, imageResponse]);
+
+                    // Process text result
+                    const textJson = await textResult.json();
+                    const generatedText = textJson?.candidates?.[0]?.content?.parts?.[0]?.text;
+                    resultBox.textContent = generatedText || "An error occurred during text generation.";
+
+                    // Process image result
+                    const imageJson = await imageResult.json();
+                    const base64Data = imageJson?.predictions?.[0]?.bytesBase64Encoded;
+                    if (base64Data) {
+                        albumCover.src = `data:image/png;base64,${base64Data}`;
+                        albumCover.classList.remove('hidden');
+                        imageLoadingText.classList.add('hidden');
+                    } else {
+                        imageLoadingText.textContent = "Image generation failed.";
+                    }
+
+                } catch (error) {
+                    console.error('Generation failed:', error);
+                    resultBox.textContent = "Oops! Our AI DJ couldn't vibe with that mix. Let's try a new tune!";
+                    imageLoadingText.textContent = "Image generation failed.";
+                } finally {
+                    clearInterval(progressInterval);
+                    updateProgressBar(100);
+                    setTimeout(() => showScreen('result'), 1000);
+                }
+            };
+
+            startBtn.addEventListener('click', () => {
+                showScreen('questionnaire');
+                questions[currentStep].classList.remove('hidden');
+                questions[currentStep].classList.add('flex');
+            });
+
+            regenerateBtn.addEventListener('click', () => {
+                currentStep = 0;
+                showScreen('welcome');
+                questions.forEach(q => {
+                    q.classList.add('hidden');
+                    q.classList.remove('flex');
+                });
+                if (audio) {
+                    audio.pause();
+                    audio = null;
+                }
+                albumCover.classList.add('hidden');
+                albumCover.src = '';
+                imageLoadingText.classList.remove('hidden');
+                imageLoadingText.textContent = 'Generating album cover...';
+                readAloudBtn.textContent = '✨ Read Aloud';
+                readAloudBtn.disabled = false;
+            });
+
+            readAloudBtn.addEventListener('click', () => {
+                if (resultBox.textContent) {
+                    generateAudio(resultBox.textContent);
+                }
+            });
+
+            document.querySelectorAll('.choice-btn, .color-btn').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const value = event.target.dataset.color || event.target.textContent.trim();
+                    switch (currentStep) {
+                        case 0: userSelections.genre = value; break;
+                        case 1: userSelections.mood = value; break;
+                        case 2: userSelections.theme = value; break;
+                        case 3: userSelections.color = value; break;
+                    }
+                    
+                    if (currentStep < questions.length - 1) {
+                        questions[currentStep].classList.add('hidden');
+                        questions[currentStep].classList.remove('flex');
+                        currentStep++;
+                        questions[currentStep].classList.remove('hidden');
+                        questions[currentStep].classList.add('flex');
+                    } else {
+                        generateContentAndImage();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

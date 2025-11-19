@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .head{
+            background-color: blueviolet;
+            padding:40px 0px 50px 40px;
+            font-family: cursive;
+            color: aliceblue;
+        }
+
+        .mid1 ul li{
+            list-style-type: none;
+            background-color: aqua;
+            padding: 15px;
+            margin-bottom: 5px;
+            
+        }
+        .mid1 li:hover{
+            background-color: rgb(48, 48, 98);
+            color: aliceblue;
+        }
+        .row{
+            margin-top: 20px;
+        }
+        
+        .row::after{
+        content: "";
+        clear: both;
+        display: table;
+  }
+        .mid1{
+            margin-left: -40px;
+            float: left;
+            width: 100%;
+            
+        }
+        .mid2{
+            margin-left: 10px;
+            float: left;
+            width: 100%;
+            background-color: aquamarine;
+            
+        }
+        .mid3{
+            margin-left: 10px;
+            float: left;
+            width: 100%;
+            background-color: aqua;
+            text-align: center;
+            color: aliceblue;
+            font-weight: bolder;
+            padding: 15px;
+        }
+
+        @media only screen and (min-width: 600px){
+            .mid1{width: 33%;}
+            .mid2{width: 66%;}
+            .mid3{ width: 100%;}
+            
+        }
+        @media only screen and (min-width: 768px){
+            .nmid1{width: 33%;}
+            .nmid2{width: 66%;}
+            .nmid3{width: 100%;}  
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>AMAZON</h1>
+    </div>
+    <div class="row">
+        <div class="mid1 nmid1">
+            <ul>
+                <li>MOBILE</li>
+                <li>LAPTOP</li>
+                <li>EARPHONES</li>
+                <li>SPEAKER</li>
+            </ul>
+        </div>
+        <div class="mid2 nmid1">
+            <h1>Mobile</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+            Rerum, quod suscipit rem doloribus dolorum illum.
+            Consectetur quod in ea ut quisquam ducimus.</p>
+        </div>
+        <div  class="mid3 nmid1 ">
+            <div>
+                <h1>HOW ?</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <h1>HOW ?</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <h1>HOW ?</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

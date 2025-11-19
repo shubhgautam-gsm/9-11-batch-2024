@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can hide HTML elements.</p>
+
+    <button type="button" onclick="switch1()">Click Me!</button>
+
+</body>
+
+<script>
+    function switchoff() {
+        document.getElementById('demo').style.color = 'purple'
+    }
+    function switchon() {
+        document.getElementById('demo').style.color = 'black'
+    }
+
+    function switch1() {
+        var a = 0
+        if (a == 0) {
+            switchoff() 
+            var a = 1
+        }
+        else {
+            switchon()
+        }
+        console.log(a)
+        
+        var a = 1
+
+
+    }
+</script>
+
+</html>

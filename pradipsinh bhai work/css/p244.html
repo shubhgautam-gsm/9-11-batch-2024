@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+          background-color: rgb(224, 220, 220);
+          border-radius: 5px;
+          padding: 20px;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-shadow: 1px 1px 1px  white,1px 1px 3px  #fcff42;
+        }
+        input[type='text'],select,textarea{
+            margin-top: 6px;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(129, 129, 129);
+            border-radius: 4px;
+            resize: vertical;
+         
+        }
+        input[type='text']:focus,select:focus,textarea:focus{
+             box-shadow: 1px 1px 5px red,2px 2px 7px rgb(255, 164, 6),
+             1px 1px 9px rgb(254, 3, 183);
+       
+        }
+        input[type='submit']{
+            background-color: rgb(120, 185, 22);
+            border-radius:5px;
+            padding: 10px;
+            float: right;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        input[type='submit']:hover{
+            background-color: rgb(13, 186, 10);
+        }
+        .col-25{
+            float: left;
+            width: 25%;
+        }
+        
+        .col-75{
+            float: left;
+            width: 75%;
+        }
+        label{
+            padding: 2px 31px 2px 0;
+            display:inline-block; 
+        }
+        
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width: 600px){
+           .col-25,.col-75,input[type='submit'],select,textarea{
+            width: 100%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">NAME:</label>
+                </div>
+                <div class="col-75">
+                    <input id="name" name="name" type="text" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">LAST NAME:</label>    
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">COUNTRY:</label>    
+                </div>
+                <div class="col-75">
+                    <select name="country" id="country">
+                        <option value="uk">United Kingdom</option>
+                        <option value="us">United States</option>
+                        <option value="india">India</option>
+                        <option value="dubai">Dubai</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="sub">SUBJECT:</label>    
+                </div>
+                <div class="col-75">
+                    <textarea name="sub" id="sub" placeholder="Write something.." style='height:200px'></textarea>    
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
